@@ -1,0 +1,73 @@
+{
+ "classifier_threshold": {
+  "rows": [
+   {
+    "level": 0.5,
+    "hippo_runs_flagged": 0.8971,
+    "agentdojo_attack_outputs_flagged": 0.9467,
+    "agentdojo_benign_outputs_flagged": 0.1544,
+    "atbench_safe_outputs_flagged": 0.0618
+   },
+   {
+    "level": 0.7,
+    "hippo_runs_flagged": 0.8971,
+    "agentdojo_attack_outputs_flagged": 0.9242,
+    "agentdojo_benign_outputs_flagged": 0.1342,
+    "atbench_safe_outputs_flagged": 0.058
+   },
+   {
+    "level": 0.9,
+    "hippo_runs_flagged": 0.8827,
+    "agentdojo_attack_outputs_flagged": 0.9119,
+    "agentdojo_benign_outputs_flagged": 0.1275,
+    "atbench_safe_outputs_flagged": 0.0549
+   },
+   {
+    "level": 0.95,
+    "hippo_runs_flagged": 0.8783,
+    "agentdojo_attack_outputs_flagged": 0.8996,
+    "agentdojo_benign_outputs_flagged": 0.1141,
+    "atbench_safe_outputs_flagged": 0.0495
+   },
+   {
+    "level": 0.99,
+    "hippo_runs_flagged": 0.708,
+    "agentdojo_attack_outputs_flagged": 0.7746,
+    "agentdojo_benign_outputs_flagged": 0.0738,
+    "atbench_safe_outputs_flagged": 0.0394
+   },
+   {
+    "level": 0.999,
+    "hippo_runs_flagged": 0.3485,
+    "agentdojo_attack_outputs_flagged": 0.5635,
+    "agentdojo_benign_outputs_flagged": 0.0403,
+    "atbench_safe_outputs_flagged": 0.0193
+   }
+  ],
+  "counts": {
+   "hippo_runs": 904,
+   "agentdojo_attack_outputs": 488,
+   "agentdojo_benign_outputs": 149,
+   "atbench_safe_outputs": 1294
+  }
+ },
+ "wider_destination_rule": {
+  "hippo_runs": 904,
+  "hippo_caught": 904,
+  "dojo_benign_sends": 36,
+  "dojo_benign_sends_hit": 9,
+  "atbench_safe_sends": 140,
+  "atbench_safe_sends_hit": 12,
+  "hippo_recall": 1.0,
+  "dojo_false_alarm_per_send": 0.25,
+  "dojo_false_alarm_ci95": [
+   0.1375,
+   0.4107
+  ],
+  "atbench_false_alarm_per_send": 0.0857,
+  "atbench_false_alarm_ci95": [
+   0.0497,
+   0.1438
+  ]
+ }
+}

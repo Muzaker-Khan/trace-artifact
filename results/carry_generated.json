@@ -1,0 +1,51 @@
+{
+ "workload": {
+  "seed": 7,
+  "events": 30000,
+  "agents": 2000,
+  "zipf_s": 1.1,
+  "attack_rate": 0.03,
+  "response_bytes": 1500,
+  "disorder_s": 2.0,
+  "sessions_per_s": 40.0,
+  "near_miss_rate": 0.05,
+  "attack_mix": "extended",
+  "delay_min_s": 60.0,
+  "delay_max_s": 600.0,
+  "evasive_rate": 0.0,
+  "named_rate": 0.5
+ },
+ "carry_words": 5,
+ "runs": {
+  "session": {
+   "taint_propagation_exfiltration": {
+    "expected": 113,
+    "raised": 113,
+    "recall": 1.0,
+    "precision": 1.0
+   },
+   "cross_session_exfiltration": {
+    "expected": 20,
+    "raised": 20,
+    "recall": 1.0,
+    "precision": 1.0
+   },
+   "unexpected_alerts": 0
+  },
+  "carry": {
+   "taint_propagation_exfiltration": {
+    "expected": 113,
+    "raised": 59,
+    "recall": 0.5221,
+    "precision": 1.0
+   },
+   "cross_session_exfiltration": {
+    "expected": 20,
+    "raised": 20,
+    "recall": 1.0,
+    "precision": 1.0
+   },
+   "unexpected_alerts": 0
+  }
+ }
+}

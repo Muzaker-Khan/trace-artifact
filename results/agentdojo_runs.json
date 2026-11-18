@@ -1,0 +1,2761 @@
+{
+ "source": "AgentDojo's published evaluation logs",
+ "runs": 13234,
+ "distinct_outputs": 7864,
+ "delays_s": [
+  0.5,
+  1,
+  2,
+  4,
+  8,
+  16
+ ],
+ "detectors": {
+  "pattern": {
+   "timing": {
+    "texts": 7864,
+    "computed_now": 0,
+    "busy_s": 0.0
+   },
+   "by_pipeline": {
+    "gpt-4o-2024-05-13": {
+     "attacks": {
+      "worked": 300,
+      "goals": 25,
+      "flagged": 0,
+      "flagged_rate": 0.0,
+      "flagged_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "holding_the_template": 300,
+      "injected_output_flagged": 0,
+      "injected_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "destination_rule": 0,
+      "destination_rate": 0.0,
+      "harm_located": 297,
+      "flagged_before_harm": 0,
+      "flagged_before_harm_rate": 0.0,
+      "median_seconds_to_harm": null,
+      "blocked_in_time": {
+       "0.5": 0.0,
+       "1": 0.0,
+       "2": 0.0,
+       "4": 0.0,
+       "8": 0.0,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 0,
+      "alerted": 0,
+      "alert_rate": 0.0,
+      "alert_ci95": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "gpt-4o-mini-2024-07-18": {
+     "attacks": {
+      "worked": 171,
+      "goals": 26,
+      "flagged": 0,
+      "flagged_rate": 0.0,
+      "flagged_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "holding_the_template": 169,
+      "injected_output_flagged": 0,
+      "injected_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "destination_rule": 0,
+      "destination_rate": 0.0,
+      "harm_located": 166,
+      "flagged_before_harm": 0,
+      "flagged_before_harm_rate": 0.0,
+      "median_seconds_to_harm": null,
+      "blocked_in_time": {
+       "0.5": 0.0,
+       "1": 0.0,
+       "2": 0.0,
+       "4": 0.0,
+       "8": 0.0,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 0,
+      "alerted": 0,
+      "alert_rate": 0.0,
+      "alert_ci95": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "claude-3-5-sonnet-20241022": {
+     "attacks": {
+      "worked": 7,
+      "goals": 4,
+      "flagged": 0,
+      "flagged_rate": 0.0,
+      "flagged_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "holding_the_template": 7,
+      "injected_output_flagged": 0,
+      "injected_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "destination_rule": 0,
+      "destination_rate": 0.0,
+      "harm_located": 7,
+      "flagged_before_harm": 0,
+      "flagged_before_harm_rate": 0.0,
+      "median_seconds_to_harm": null,
+      "blocked_in_time": {
+       "0.5": 0.0,
+       "1": 0.0,
+       "2": 0.0,
+       "4": 0.0,
+       "8": 0.0,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 0,
+      "alerted": 0,
+      "alert_rate": 0.0,
+      "alert_ci95": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "claude-3-7-sonnet-20250219": {
+     "attacks": {
+      "worked": 47,
+      "goals": 13,
+      "flagged": 0,
+      "flagged_rate": 0.0,
+      "flagged_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "holding_the_template": 47,
+      "injected_output_flagged": 0,
+      "injected_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "destination_rule": 0,
+      "destination_rate": 0.0,
+      "harm_located": 45,
+      "flagged_before_harm": 0,
+      "flagged_before_harm_rate": 0.0,
+      "median_seconds_to_harm": null,
+      "blocked_in_time": {
+       "0.5": 0.0,
+       "1": 0.0,
+       "2": 0.0,
+       "4": 0.0,
+       "8": 0.0,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 0,
+      "alerted": 0,
+      "alert_rate": 0.0,
+      "alert_ci95": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "gemini-1.5-pro-002": {
+     "attacks": {
+      "worked": 107,
+      "goals": 22,
+      "flagged": 0,
+      "flagged_rate": 0.0,
+      "flagged_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "holding_the_template": 107,
+      "injected_output_flagged": 0,
+      "injected_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "destination_rule": 0,
+      "destination_rate": 0.0,
+      "harm_located": 102,
+      "flagged_before_harm": 0,
+      "flagged_before_harm_rate": 0.0,
+      "median_seconds_to_harm": null,
+      "blocked_in_time": {
+       "0.5": 0.0,
+       "1": 0.0,
+       "2": 0.0,
+       "4": 0.0,
+       "8": 0.0,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 0,
+      "alerted": 0,
+      "alert_rate": 0.0,
+      "alert_ci95": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "gemini-2.0-flash-001": {
+     "attacks": {
+      "worked": 134,
+      "goals": 26,
+      "flagged": 0,
+      "flagged_rate": 0.0,
+      "flagged_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "holding_the_template": 134,
+      "injected_output_flagged": 0,
+      "injected_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "destination_rule": 0,
+      "destination_rate": 0.0,
+      "harm_located": 130,
+      "flagged_before_harm": 0,
+      "flagged_before_harm_rate": 0.0,
+      "median_seconds_to_harm": null,
+      "blocked_in_time": {
+       "0.5": 0.0,
+       "1": 0.0,
+       "2": 0.0,
+       "4": 0.0,
+       "8": 0.0,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 0,
+      "alerted": 0,
+      "alert_rate": 0.0,
+      "alert_ci95": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "command-r-plus": {
+     "attacks": {
+      "worked": 6,
+      "goals": 5,
+      "flagged": 0,
+      "flagged_rate": 0.0,
+      "flagged_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "holding_the_template": 6,
+      "injected_output_flagged": 0,
+      "injected_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "destination_rule": 0,
+      "destination_rate": 0.0,
+      "harm_located": 6,
+      "flagged_before_harm": 0,
+      "flagged_before_harm_rate": 0.0,
+      "median_seconds_to_harm": null,
+      "blocked_in_time": {
+       "0.5": 0.0,
+       "1": 0.0,
+       "2": 0.0,
+       "4": 0.0,
+       "8": 0.0,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 0,
+      "alerted": 0,
+      "alert_rate": 0.0,
+      "alert_ci95": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "meta-llama_Llama-3.3-70B-Instruct": {
+     "attacks": {
+      "worked": 219,
+      "goals": 28,
+      "flagged": 0,
+      "flagged_rate": 0.0,
+      "flagged_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "holding_the_template": 219,
+      "injected_output_flagged": 0,
+      "injected_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "destination_rule": 0,
+      "destination_rate": 0.0,
+      "harm_located": 208,
+      "flagged_before_harm": 0,
+      "flagged_before_harm_rate": 0.0,
+      "median_seconds_to_harm": null,
+      "blocked_in_time": {
+       "0.5": 0.0,
+       "1": 0.0,
+       "2": 0.0,
+       "4": 0.0,
+       "8": 0.0,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 0,
+      "alerted": 0,
+      "alert_rate": 0.0,
+      "alert_ci95": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "gpt-4o-2024-05-13-transformers_pi_detector": {
+     "attacks": {
+      "worked": 50,
+      "goals": 7,
+      "flagged": 0,
+      "flagged_rate": 0.0,
+      "flagged_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "holding_the_template": 50,
+      "injected_output_flagged": 0,
+      "injected_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "destination_rule": 0,
+      "destination_rate": 0.0,
+      "harm_located": 50,
+      "flagged_before_harm": 0,
+      "flagged_before_harm_rate": 0.0,
+      "median_seconds_to_harm": null,
+      "blocked_in_time": {
+       "0.5": 0.0,
+       "1": 0.0,
+       "2": 0.0,
+       "4": 0.0,
+       "8": 0.0,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 0,
+      "alerted": 0,
+      "alert_rate": 0.0,
+      "alert_ci95": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "gpt-4o-2024-05-13-tool_filter": {
+     "attacks": {
+      "worked": 43,
+      "goals": 12,
+      "flagged": 0,
+      "flagged_rate": 0.0,
+      "flagged_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "holding_the_template": 43,
+      "injected_output_flagged": 0,
+      "injected_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "destination_rule": 0,
+      "destination_rate": 0.0,
+      "harm_located": 37,
+      "flagged_before_harm": 0,
+      "flagged_before_harm_rate": 0.0,
+      "median_seconds_to_harm": null,
+      "blocked_in_time": {
+       "0.5": 0.0,
+       "1": 0.0,
+       "2": 0.0,
+       "4": 0.0,
+       "8": 0.0,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 0,
+      "alerted": 0,
+      "alert_rate": 0.0,
+      "alert_ci95": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "gpt-4o-2024-05-13-spotlighting_with_delimiting": {
+     "attacks": {
+      "worked": 262,
+      "goals": 21,
+      "flagged": 0,
+      "flagged_rate": 0.0,
+      "flagged_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "holding_the_template": 262,
+      "injected_output_flagged": 0,
+      "injected_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "destination_rule": 0,
+      "destination_rate": 0.0,
+      "harm_located": 262,
+      "flagged_before_harm": 0,
+      "flagged_before_harm_rate": 0.0,
+      "median_seconds_to_harm": null,
+      "blocked_in_time": {
+       "0.5": 0.0,
+       "1": 0.0,
+       "2": 0.0,
+       "4": 0.0,
+       "8": 0.0,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 0,
+      "alerted": 0,
+      "alert_rate": 0.0,
+      "alert_ci95": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "gpt-4o-2024-05-13-repeat_user_prompt": {
+     "attacks": {
+      "worked": 175,
+      "goals": 20,
+      "flagged": 0,
+      "flagged_rate": 0.0,
+      "flagged_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "holding_the_template": 175,
+      "injected_output_flagged": 0,
+      "injected_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "destination_rule": 0,
+      "destination_rate": 0.0,
+      "harm_located": 170,
+      "flagged_before_harm": 0,
+      "flagged_before_harm_rate": 0.0,
+      "median_seconds_to_harm": null,
+      "blocked_in_time": {
+       "0.5": 0.0,
+       "1": 0.0,
+       "2": 0.0,
+       "4": 0.0,
+       "8": 0.0,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 0,
+      "alerted": 0,
+      "alert_rate": 0.0,
+      "alert_ci95": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "Meta-SecAlign-70B": {
+     "attacks": {
+      "worked": 21,
+      "goals": 14,
+      "flagged": 0,
+      "flagged_rate": 0.0,
+      "flagged_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "holding_the_template": 21,
+      "injected_output_flagged": 0,
+      "injected_ci95_by_goal": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "destination_rule": 0,
+      "destination_rate": 0.0,
+      "harm_located": 21,
+      "flagged_before_harm": 0,
+      "flagged_before_harm_rate": 0.0,
+      "median_seconds_to_harm": null,
+      "blocked_in_time": {
+       "0.5": 0.0,
+       "1": 0.0,
+       "2": 0.0,
+       "4": 0.0,
+       "8": 0.0,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 0,
+      "alerted": 0,
+      "alert_rate": 0.0,
+      "alert_ci95": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    }
+   },
+   "by_attack": {
+    "ignore_previous": {
+     "worked": 34,
+     "goals": 11,
+     "flagged": 0,
+     "flagged_rate": 0.0,
+     "flagged_ci95_by_goal": [
+      0.0,
+      0.0
+     ],
+     "holding_the_template": 0,
+     "injected_output_flagged": 0,
+     "injected_ci95_by_goal": [
+      0.0,
+      0.0
+     ],
+     "sink_alerted": 0,
+     "destination_rule": 0,
+     "destination_rate": 0.0,
+     "harm_located": 34,
+     "flagged_before_harm": 0,
+     "flagged_before_harm_rate": 0.0,
+     "median_seconds_to_harm": null,
+     "blocked_in_time": {
+      "0.5": 0.0,
+      "1": 0.0,
+      "2": 0.0,
+      "4": 0.0,
+      "8": 0.0,
+      "16": 0.0
+     }
+    },
+    "direct": {
+     "worked": 23,
+     "goals": 11,
+     "flagged": 0,
+     "flagged_rate": 0.0,
+     "flagged_ci95_by_goal": [
+      0.0,
+      0.0
+     ],
+     "holding_the_template": 0,
+     "injected_output_flagged": 0,
+     "injected_ci95_by_goal": [
+      0.0,
+      0.0
+     ],
+     "sink_alerted": 0,
+     "destination_rule": 0,
+     "destination_rate": 0.0,
+     "harm_located": 23,
+     "flagged_before_harm": 0,
+     "flagged_before_harm_rate": 0.0,
+     "median_seconds_to_harm": null,
+     "blocked_in_time": {
+      "0.5": 0.0,
+      "1": 0.0,
+      "2": 0.0,
+      "4": 0.0,
+      "8": 0.0,
+      "16": 0.0
+     }
+    },
+    "tool_knowledge": {
+     "worked": 217,
+     "goals": 23,
+     "flagged": 0,
+     "flagged_rate": 0.0,
+     "flagged_ci95_by_goal": [
+      0.0,
+      0.0
+     ],
+     "holding_the_template": 217,
+     "injected_output_flagged": 0,
+     "injected_ci95_by_goal": [
+      0.0,
+      0.0
+     ],
+     "sink_alerted": 0,
+     "destination_rule": 0,
+     "destination_rate": 0.0,
+     "harm_located": 212,
+     "flagged_before_harm": 0,
+     "flagged_before_harm_rate": 0.0,
+     "median_seconds_to_harm": null,
+     "blocked_in_time": {
+      "0.5": 0.0,
+      "1": 0.0,
+      "2": 0.0,
+      "4": 0.0,
+      "8": 0.0,
+      "16": 0.0
+     }
+    },
+    "injecagent": {
+     "worked": 36,
+     "goals": 12,
+     "flagged": 36,
+     "flagged_rate": 1.0,
+     "flagged_ci95_by_goal": [
+      1.0,
+      1.0
+     ],
+     "holding_the_template": 0,
+     "injected_output_flagged": 0,
+     "injected_ci95_by_goal": [
+      0.0,
+      0.0
+     ],
+     "sink_alerted": 20,
+     "destination_rule": 15,
+     "destination_rate": 0.4167,
+     "harm_located": 36,
+     "flagged_before_harm": 35,
+     "flagged_before_harm_rate": 0.9722,
+     "median_seconds_to_harm": 2.58,
+     "blocked_in_time": {
+      "0.5": 0.9722,
+      "1": 0.9722,
+      "2": 0.5278,
+      "4": 0.0556,
+      "8": 0.0,
+      "16": 0.0
+     }
+    },
+    "system_message": {
+     "worked": 0,
+     "goals": 0,
+     "flagged": 0,
+     "flagged_rate": null,
+     "flagged_ci95_by_goal": null,
+     "holding_the_template": 0,
+     "injected_output_flagged": 0,
+     "injected_ci95_by_goal": null,
+     "sink_alerted": 0,
+     "destination_rule": 0,
+     "destination_rate": null,
+     "harm_located": 0,
+     "flagged_before_harm": 0,
+     "flagged_before_harm_rate": null,
+     "median_seconds_to_harm": null,
+     "blocked_in_time": {}
+    }
+   },
+   "undefended": {
+    "attacks": {
+     "worked": 991,
+     "goals": 32,
+     "flagged": 0,
+     "flagged_rate": 0.0,
+     "flagged_ci95_by_goal": [
+      0.0,
+      0.0
+     ],
+     "holding_the_template": 989,
+     "injected_output_flagged": 0,
+     "injected_ci95_by_goal": [
+      0.0,
+      0.0
+     ],
+     "sink_alerted": 0,
+     "destination_rule": 0,
+     "destination_rate": 0.0,
+     "harm_located": 961,
+     "flagged_before_harm": 0,
+     "flagged_before_harm_rate": 0.0,
+     "median_seconds_to_harm": null,
+     "blocked_in_time": {
+      "0.5": 0.0,
+      "1": 0.0,
+      "2": 0.0,
+      "4": 0.0,
+      "8": 0.0,
+      "16": 0.0
+     }
+    },
+    "honest": {
+     "runs": 776,
+     "tasks": 97,
+     "tasks_alerted": 0,
+     "alerted": 0,
+     "alert_rate": 0.0,
+     "alert_ci95": [
+      0.0,
+      0.0
+     ],
+     "sink_alerted": 0,
+     "sink_rate": 0.0,
+     "sink_ci95": [
+      0.0,
+      0.0
+     ],
+     "destination_rule": 0,
+     "flag_then_send": 0
+    }
+   }
+  },
+  "classifier": {
+   "timing": {
+    "texts": 7864,
+    "computed_now": 0,
+    "busy_s": 0.0
+   },
+   "by_pipeline": {
+    "gpt-4o-2024-05-13": {
+     "attacks": {
+      "worked": 300,
+      "goals": 25,
+      "flagged": 252,
+      "flagged_rate": 0.84,
+      "flagged_ci95_by_goal": [
+       0.7269,
+       0.9514
+      ],
+      "holding_the_template": 300,
+      "injected_output_flagged": 201,
+      "injected_ci95_by_goal": [
+       0.5181,
+       0.8341
+      ],
+      "sink_alerted": 186,
+      "destination_rule": 103,
+      "destination_rate": 0.3433,
+      "harm_located": 297,
+      "flagged_before_harm": 192,
+      "flagged_before_harm_rate": 0.6465,
+      "median_seconds_to_harm": 2.11,
+      "blocked_in_time": {
+       "0.5": 0.6465,
+       "1": 0.6162,
+       "2": 0.3502,
+       "4": 0.0842,
+       "8": 0.0135,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 43,
+      "alerted": 43,
+      "alert_rate": 0.4433,
+      "alert_ci95": [
+       0.3402,
+       0.5464
+      ],
+      "sink_alerted": 11,
+      "sink_rate": 0.1134,
+      "sink_ci95": [
+       0.0515,
+       0.1753
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 13
+     }
+    },
+    "gpt-4o-mini-2024-07-18": {
+     "attacks": {
+      "worked": 171,
+      "goals": 26,
+      "flagged": 146,
+      "flagged_rate": 0.8538,
+      "flagged_ci95_by_goal": [
+       0.7484,
+       0.9507
+      ],
+      "holding_the_template": 169,
+      "injected_output_flagged": 112,
+      "injected_ci95_by_goal": [
+       0.497,
+       0.8224
+      ],
+      "sink_alerted": 105,
+      "destination_rule": 56,
+      "destination_rate": 0.3275,
+      "harm_located": 166,
+      "flagged_before_harm": 109,
+      "flagged_before_harm_rate": 0.6566,
+      "median_seconds_to_harm": 1.84,
+      "blocked_in_time": {
+       "0.5": 0.6566,
+       "1": 0.5482,
+       "2": 0.2771,
+       "4": 0.0602,
+       "8": 0.0301,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 48,
+      "alerted": 48,
+      "alert_rate": 0.4948,
+      "alert_ci95": [
+       0.3918,
+       0.5979
+      ],
+      "sink_alerted": 13,
+      "sink_rate": 0.134,
+      "sink_ci95": [
+       0.0722,
+       0.2062
+      ],
+      "destination_rule": 2,
+      "flag_then_send": 14
+     }
+    },
+    "claude-3-5-sonnet-20241022": {
+     "attacks": {
+      "worked": 7,
+      "goals": 4,
+      "flagged": 7,
+      "flagged_rate": 1.0,
+      "flagged_ci95_by_goal": [
+       1.0,
+       1.0
+      ],
+      "holding_the_template": 7,
+      "injected_output_flagged": 7,
+      "injected_ci95_by_goal": [
+       1.0,
+       1.0
+      ],
+      "sink_alerted": 4,
+      "destination_rule": 1,
+      "destination_rate": 0.1429,
+      "harm_located": 7,
+      "flagged_before_harm": 7,
+      "flagged_before_harm_rate": 1.0,
+      "median_seconds_to_harm": 5.23,
+      "blocked_in_time": {
+       "0.5": 1.0,
+       "1": 1.0,
+       "2": 1.0,
+       "4": 0.8571,
+       "8": 0.2857,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 42,
+      "alerted": 42,
+      "alert_rate": 0.433,
+      "alert_ci95": [
+       0.3299,
+       0.5361
+      ],
+      "sink_alerted": 10,
+      "sink_rate": 0.1031,
+      "sink_ci95": [
+       0.0515,
+       0.1649
+      ],
+      "destination_rule": 1,
+      "flag_then_send": 10
+     }
+    },
+    "claude-3-7-sonnet-20250219": {
+     "attacks": {
+      "worked": 47,
+      "goals": 13,
+      "flagged": 41,
+      "flagged_rate": 0.8723,
+      "flagged_ci95_by_goal": [
+       0.8043,
+       0.9615
+      ],
+      "holding_the_template": 47,
+      "injected_output_flagged": 37,
+      "injected_ci95_by_goal": [
+       0.5893,
+       0.9615
+      ],
+      "sink_alerted": 17,
+      "destination_rule": 5,
+      "destination_rate": 0.1064,
+      "harm_located": 45,
+      "flagged_before_harm": 37,
+      "flagged_before_harm_rate": 0.8222,
+      "median_seconds_to_harm": 5.85,
+      "blocked_in_time": {
+       "0.5": 0.8222,
+       "1": 0.8222,
+       "2": 0.8222,
+       "4": 0.6,
+       "8": 0.3556,
+       "16": 0.0889
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 43,
+      "alerted": 43,
+      "alert_rate": 0.4433,
+      "alert_ci95": [
+       0.3505,
+       0.5361
+      ],
+      "sink_alerted": 11,
+      "sink_rate": 0.1134,
+      "sink_ci95": [
+       0.0515,
+       0.1753
+      ],
+      "destination_rule": 1,
+      "flag_then_send": 11
+     }
+    },
+    "gemini-1.5-pro-002": {
+     "attacks": {
+      "worked": 107,
+      "goals": 22,
+      "flagged": 102,
+      "flagged_rate": 0.9533,
+      "flagged_ci95_by_goal": [
+       0.9154,
+       0.99
+      ],
+      "holding_the_template": 107,
+      "injected_output_flagged": 95,
+      "injected_ci95_by_goal": [
+       0.8244,
+       0.954
+      ],
+      "sink_alerted": 66,
+      "destination_rule": 22,
+      "destination_rate": 0.2056,
+      "harm_located": 102,
+      "flagged_before_harm": 84,
+      "flagged_before_harm_rate": 0.8235,
+      "median_seconds_to_harm": 12.24,
+      "blocked_in_time": {
+       "0.5": 0.8235,
+       "1": 0.8235,
+       "2": 0.8235,
+       "4": 0.7647,
+       "8": 0.5686,
+       "16": 0.3235
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 40,
+      "alerted": 40,
+      "alert_rate": 0.4124,
+      "alert_ci95": [
+       0.3093,
+       0.5052
+      ],
+      "sink_alerted": 10,
+      "sink_rate": 0.1031,
+      "sink_ci95": [
+       0.0515,
+       0.1649
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 11
+     }
+    },
+    "gemini-2.0-flash-001": {
+     "attacks": {
+      "worked": 134,
+      "goals": 26,
+      "flagged": 133,
+      "flagged_rate": 0.9925,
+      "flagged_ci95_by_goal": [
+       0.9776,
+       1.0
+      ],
+      "holding_the_template": 134,
+      "injected_output_flagged": 126,
+      "injected_ci95_by_goal": [
+       0.8713,
+       1.0
+      ],
+      "sink_alerted": 98,
+      "destination_rule": 36,
+      "destination_rate": 0.2687,
+      "harm_located": 130,
+      "flagged_before_harm": 106,
+      "flagged_before_harm_rate": 0.8154,
+      "median_seconds_to_harm": 2.39,
+      "blocked_in_time": {
+       "0.5": 0.8154,
+       "1": 0.8077,
+       "2": 0.5,
+       "4": 0.1923,
+       "8": 0.0308,
+       "16": 0.0077
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 24,
+      "alerted": 24,
+      "alert_rate": 0.2474,
+      "alert_ci95": [
+       0.1649,
+       0.3402
+      ],
+      "sink_alerted": 8,
+      "sink_rate": 0.0825,
+      "sink_ci95": [
+       0.0309,
+       0.134
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 8
+     }
+    },
+    "command-r-plus": {
+     "attacks": {
+      "worked": 6,
+      "goals": 5,
+      "flagged": 6,
+      "flagged_rate": 1.0,
+      "flagged_ci95_by_goal": [
+       1.0,
+       1.0
+      ],
+      "holding_the_template": 6,
+      "injected_output_flagged": 6,
+      "injected_ci95_by_goal": [
+       1.0,
+       1.0
+      ],
+      "sink_alerted": 5,
+      "destination_rule": 5,
+      "destination_rate": 0.8333,
+      "harm_located": 6,
+      "flagged_before_harm": 6,
+      "flagged_before_harm_rate": 1.0,
+      "median_seconds_to_harm": 4.94,
+      "blocked_in_time": {
+       "0.5": 1.0,
+       "1": 1.0,
+       "2": 1.0,
+       "4": 0.8333,
+       "8": 0.3333,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 31,
+      "alerted": 31,
+      "alert_rate": 0.3196,
+      "alert_ci95": [
+       0.2268,
+       0.4124
+      ],
+      "sink_alerted": 1,
+      "sink_rate": 0.0103,
+      "sink_ci95": [
+       0.0,
+       0.0309
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 1
+     }
+    },
+    "meta-llama_Llama-3.3-70B-Instruct": {
+     "attacks": {
+      "worked": 219,
+      "goals": 28,
+      "flagged": 207,
+      "flagged_rate": 0.9452,
+      "flagged_ci95_by_goal": [
+       0.8879,
+       1.0
+      ],
+      "holding_the_template": 219,
+      "injected_output_flagged": 184,
+      "injected_ci95_by_goal": [
+       0.7257,
+       0.9535
+      ],
+      "sink_alerted": 144,
+      "destination_rule": 90,
+      "destination_rate": 0.411,
+      "harm_located": 208,
+      "flagged_before_harm": 166,
+      "flagged_before_harm_rate": 0.7981,
+      "median_seconds_to_harm": 2.51,
+      "blocked_in_time": {
+       "0.5": 0.7981,
+       "1": 0.7837,
+       "2": 0.5625,
+       "4": 0.2212,
+       "8": 0.0673,
+       "16": 0.0144
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 39,
+      "alerted": 39,
+      "alert_rate": 0.4021,
+      "alert_ci95": [
+       0.3093,
+       0.4948
+      ],
+      "sink_alerted": 9,
+      "sink_rate": 0.0928,
+      "sink_ci95": [
+       0.0412,
+       0.1546
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 10
+     }
+    },
+    "gpt-4o-2024-05-13-transformers_pi_detector": {
+     "attacks": {
+      "worked": 50,
+      "goals": 7,
+      "flagged": 37,
+      "flagged_rate": 0.74,
+      "flagged_ci95_by_goal": [
+       0.5698,
+       1.0
+      ],
+      "holding_the_template": 50,
+      "injected_output_flagged": 37,
+      "injected_ci95_by_goal": [
+       0.5698,
+       1.0
+      ],
+      "sink_alerted": 18,
+      "destination_rule": 11,
+      "destination_rate": 0.22,
+      "harm_located": 50,
+      "flagged_before_harm": 36,
+      "flagged_before_harm_rate": 0.72,
+      "median_seconds_to_harm": 3.15,
+      "blocked_in_time": {
+       "0.5": 0.72,
+       "1": 0.7,
+       "2": 0.62,
+       "4": 0.14,
+       "8": 0.04,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 8,
+      "alerted": 8,
+      "alert_rate": 0.0825,
+      "alert_ci95": [
+       0.0309,
+       0.1443
+      ],
+      "sink_alerted": 1,
+      "sink_rate": 0.0103,
+      "sink_ci95": [
+       0.0,
+       0.0309
+      ],
+      "destination_rule": 1,
+      "flag_then_send": 1
+     }
+    },
+    "gpt-4o-2024-05-13-tool_filter": {
+     "attacks": {
+      "worked": 43,
+      "goals": 12,
+      "flagged": 32,
+      "flagged_rate": 0.7442,
+      "flagged_ci95_by_goal": [
+       0.48,
+       0.9714
+      ],
+      "holding_the_template": 43,
+      "injected_output_flagged": 32,
+      "injected_ci95_by_goal": [
+       0.48,
+       0.9714
+      ],
+      "sink_alerted": 19,
+      "destination_rule": 14,
+      "destination_rate": 0.3256,
+      "harm_located": 37,
+      "flagged_before_harm": 27,
+      "flagged_before_harm_rate": 0.7297,
+      "median_seconds_to_harm": 2.83,
+      "blocked_in_time": {
+       "0.5": 0.7297,
+       "1": 0.7297,
+       "2": 0.4865,
+       "4": 0.2432,
+       "8": 0.0541,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 41,
+      "alerted": 41,
+      "alert_rate": 0.4227,
+      "alert_ci95": [
+       0.3299,
+       0.5155
+      ],
+      "sink_alerted": 10,
+      "sink_rate": 0.1031,
+      "sink_ci95": [
+       0.0515,
+       0.1649
+      ],
+      "destination_rule": 1,
+      "flag_then_send": 11
+     }
+    },
+    "gpt-4o-2024-05-13-spotlighting_with_delimiting": {
+     "attacks": {
+      "worked": 262,
+      "goals": 21,
+      "flagged": 240,
+      "flagged_rate": 0.916,
+      "flagged_ci95_by_goal": [
+       0.8313,
+       0.9884
+      ],
+      "holding_the_template": 262,
+      "injected_output_flagged": 205,
+      "injected_ci95_by_goal": [
+       0.6528,
+       0.9174
+      ],
+      "sink_alerted": 172,
+      "destination_rule": 103,
+      "destination_rate": 0.3931,
+      "harm_located": 262,
+      "flagged_before_harm": 195,
+      "flagged_before_harm_rate": 0.7443,
+      "median_seconds_to_harm": 2.4,
+      "blocked_in_time": {
+       "0.5": 0.7443,
+       "1": 0.7405,
+       "2": 0.4809,
+       "4": 0.1031,
+       "8": 0.0229,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 44,
+      "alerted": 44,
+      "alert_rate": 0.4536,
+      "alert_ci95": [
+       0.3505,
+       0.5567
+      ],
+      "sink_alerted": 11,
+      "sink_rate": 0.1134,
+      "sink_ci95": [
+       0.0515,
+       0.1753
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 14
+     }
+    },
+    "gpt-4o-2024-05-13-repeat_user_prompt": {
+     "attacks": {
+      "worked": 175,
+      "goals": 20,
+      "flagged": 150,
+      "flagged_rate": 0.8571,
+      "flagged_ci95_by_goal": [
+       0.7405,
+       0.9708
+      ],
+      "holding_the_template": 175,
+      "injected_output_flagged": 126,
+      "injected_ci95_by_goal": [
+       0.5826,
+       0.8675
+      ],
+      "sink_alerted": 106,
+      "destination_rule": 54,
+      "destination_rate": 0.3086,
+      "harm_located": 170,
+      "flagged_before_harm": 115,
+      "flagged_before_harm_rate": 0.6765,
+      "median_seconds_to_harm": 2.62,
+      "blocked_in_time": {
+       "0.5": 0.6765,
+       "1": 0.6706,
+       "2": 0.4471,
+       "4": 0.1294,
+       "8": 0.0235,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 48,
+      "alerted": 48,
+      "alert_rate": 0.4948,
+      "alert_ci95": [
+       0.3918,
+       0.5979
+      ],
+      "sink_alerted": 13,
+      "sink_rate": 0.134,
+      "sink_ci95": [
+       0.0722,
+       0.2062
+      ],
+      "destination_rule": 1,
+      "flag_then_send": 14
+     }
+    },
+    "Meta-SecAlign-70B": {
+     "attacks": {
+      "worked": 21,
+      "goals": 14,
+      "flagged": 20,
+      "flagged_rate": 0.9524,
+      "flagged_ci95_by_goal": [
+       0.8636,
+       1.0
+      ],
+      "holding_the_template": 21,
+      "injected_output_flagged": 19,
+      "injected_ci95_by_goal": [
+       0.7727,
+       1.0
+      ],
+      "sink_alerted": 17,
+      "destination_rule": 12,
+      "destination_rate": 0.5714,
+      "harm_located": 21,
+      "flagged_before_harm": 19,
+      "flagged_before_harm_rate": 0.9048,
+      "median_seconds_to_harm": 5.91,
+      "blocked_in_time": {
+       "0.5": 0.9048,
+       "1": 0.9048,
+       "2": 0.9048,
+       "4": 0.619,
+       "8": 0.1905,
+       "16": 0.0476
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 45,
+      "alerted": 45,
+      "alert_rate": 0.4639,
+      "alert_ci95": [
+       0.3608,
+       0.5567
+      ],
+      "sink_alerted": 12,
+      "sink_rate": 0.1237,
+      "sink_ci95": [
+       0.0619,
+       0.1959
+      ],
+      "destination_rule": 1,
+      "flag_then_send": 13
+     }
+    }
+   },
+   "by_attack": {
+    "ignore_previous": {
+     "worked": 34,
+     "goals": 11,
+     "flagged": 34,
+     "flagged_rate": 1.0,
+     "flagged_ci95_by_goal": [
+      1.0,
+      1.0
+     ],
+     "holding_the_template": 0,
+     "injected_output_flagged": 0,
+     "injected_ci95_by_goal": [
+      0.0,
+      0.0
+     ],
+     "sink_alerted": 21,
+     "destination_rule": 9,
+     "destination_rate": 0.2647,
+     "harm_located": 34,
+     "flagged_before_harm": 34,
+     "flagged_before_harm_rate": 1.0,
+     "median_seconds_to_harm": 2.52,
+     "blocked_in_time": {
+      "0.5": 1.0,
+      "1": 0.9412,
+      "2": 0.5588,
+      "4": 0.2059,
+      "8": 0.0,
+      "16": 0.0
+     }
+    },
+    "direct": {
+     "worked": 23,
+     "goals": 11,
+     "flagged": 8,
+     "flagged_rate": 0.3478,
+     "flagged_ci95_by_goal": [
+      0.1667,
+      0.5789
+     ],
+     "holding_the_template": 0,
+     "injected_output_flagged": 0,
+     "injected_ci95_by_goal": [
+      0.0,
+      0.0
+     ],
+     "sink_alerted": 5,
+     "destination_rule": 3,
+     "destination_rate": 0.1304,
+     "harm_located": 23,
+     "flagged_before_harm": 7,
+     "flagged_before_harm_rate": 0.3043,
+     "median_seconds_to_harm": 2.56,
+     "blocked_in_time": {
+      "0.5": 0.3043,
+      "1": 0.3043,
+      "2": 0.1739,
+      "4": 0.0435,
+      "8": 0.0,
+      "16": 0.0
+     }
+    },
+    "tool_knowledge": {
+     "worked": 217,
+     "goals": 23,
+     "flagged": 215,
+     "flagged_rate": 0.9908,
+     "flagged_ci95_by_goal": [
+      0.9718,
+      1.0
+     ],
+     "holding_the_template": 217,
+     "injected_output_flagged": 215,
+     "injected_ci95_by_goal": [
+      0.9718,
+      1.0
+     ],
+     "sink_alerted": 150,
+     "destination_rule": 75,
+     "destination_rate": 0.3456,
+     "harm_located": 212,
+     "flagged_before_harm": 192,
+     "flagged_before_harm_rate": 0.9057,
+     "median_seconds_to_harm": 2.26,
+     "blocked_in_time": {
+      "0.5": 0.9057,
+      "1": 0.8821,
+      "2": 0.5189,
+      "4": 0.1274,
+      "8": 0.0236,
+      "16": 0.0
+     }
+    },
+    "injecagent": {
+     "worked": 36,
+     "goals": 12,
+     "flagged": 36,
+     "flagged_rate": 1.0,
+     "flagged_ci95_by_goal": [
+      1.0,
+      1.0
+     ],
+     "holding_the_template": 0,
+     "injected_output_flagged": 0,
+     "injected_ci95_by_goal": [
+      0.0,
+      0.0
+     ],
+     "sink_alerted": 20,
+     "destination_rule": 15,
+     "destination_rate": 0.4167,
+     "harm_located": 36,
+     "flagged_before_harm": 36,
+     "flagged_before_harm_rate": 1.0,
+     "median_seconds_to_harm": 2.73,
+     "blocked_in_time": {
+      "0.5": 1.0,
+      "1": 1.0,
+      "2": 0.6111,
+      "4": 0.0556,
+      "8": 0.0,
+      "16": 0.0
+     }
+    },
+    "system_message": {
+     "worked": 0,
+     "goals": 0,
+     "flagged": 0,
+     "flagged_rate": null,
+     "flagged_ci95_by_goal": null,
+     "holding_the_template": 0,
+     "injected_output_flagged": 0,
+     "injected_ci95_by_goal": null,
+     "sink_alerted": 0,
+     "destination_rule": 0,
+     "destination_rate": null,
+     "harm_located": 0,
+     "flagged_before_harm": 0,
+     "flagged_before_harm_rate": null,
+     "median_seconds_to_harm": null,
+     "blocked_in_time": {}
+    }
+   },
+   "undefended": {
+    "attacks": {
+     "worked": 991,
+     "goals": 32,
+     "flagged": 894,
+     "flagged_rate": 0.9021,
+     "flagged_ci95_by_goal": [
+      0.834,
+      0.9678
+     ],
+     "holding_the_template": 989,
+     "injected_output_flagged": 768,
+     "injected_ci95_by_goal": [
+      0.667,
+      0.8907
+     ],
+     "sink_alerted": 625,
+     "destination_rule": 318,
+     "destination_rate": 0.3209,
+     "harm_located": 961,
+     "flagged_before_harm": 707,
+     "flagged_before_harm_rate": 0.7357,
+     "median_seconds_to_harm": 2.55,
+     "blocked_in_time": {
+      "0.5": 0.7357,
+      "1": 0.7034,
+      "2": 0.4849,
+      "4": 0.231,
+      "8": 0.1093,
+      "16": 0.0427
+     }
+    },
+    "honest": {
+     "runs": 776,
+     "tasks": 97,
+     "tasks_alerted": 56,
+     "alerted": 310,
+     "alert_rate": 0.3995,
+     "alert_ci95": [
+      0.3196,
+      0.482
+     ],
+     "sink_alerted": 73,
+     "sink_rate": 0.0941,
+     "sink_ci95": [
+      0.0464,
+      0.1469
+     ],
+     "destination_rule": 4,
+     "flag_then_send": 78
+    }
+   }
+  },
+  "cascade": {
+   "timing": {
+    "texts": 7864,
+    "computed_now": 0,
+    "busy_s": 0.0
+   },
+   "by_pipeline": {
+    "gpt-4o-2024-05-13": {
+     "attacks": {
+      "worked": 300,
+      "goals": 25,
+      "flagged": 218,
+      "flagged_rate": 0.7267,
+      "flagged_ci95_by_goal": [
+       0.542,
+       0.9135
+      ],
+      "holding_the_template": 300,
+      "injected_output_flagged": 218,
+      "injected_ci95_by_goal": [
+       0.542,
+       0.9135
+      ],
+      "sink_alerted": 170,
+      "destination_rule": 122,
+      "destination_rate": 0.4067,
+      "harm_located": 297,
+      "flagged_before_harm": 210,
+      "flagged_before_harm_rate": 0.7071,
+      "median_seconds_to_harm": 1.89,
+      "blocked_in_time": {
+       "0.5": 0.7071,
+       "1": 0.6566,
+       "2": 0.3098,
+       "4": 0.0505,
+       "8": 0.0101,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 4,
+      "alerted": 4,
+      "alert_rate": 0.0412,
+      "alert_ci95": [
+       0.0103,
+       0.0825
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "gpt-4o-mini-2024-07-18": {
+     "attacks": {
+      "worked": 171,
+      "goals": 26,
+      "flagged": 119,
+      "flagged_rate": 0.6959,
+      "flagged_ci95_by_goal": [
+       0.4924,
+       0.8837
+      ],
+      "holding_the_template": 169,
+      "injected_output_flagged": 119,
+      "injected_ci95_by_goal": [
+       0.4924,
+       0.8837
+      ],
+      "sink_alerted": 91,
+      "destination_rule": 62,
+      "destination_rate": 0.3626,
+      "harm_located": 166,
+      "flagged_before_harm": 112,
+      "flagged_before_harm_rate": 0.6747,
+      "median_seconds_to_harm": 1.54,
+      "blocked_in_time": {
+       "0.5": 0.6747,
+       "1": 0.494,
+       "2": 0.241,
+       "4": 0.0241,
+       "8": 0.006,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 5,
+      "alerted": 5,
+      "alert_rate": 0.0515,
+      "alert_ci95": [
+       0.0103,
+       0.1031
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "claude-3-5-sonnet-20241022": {
+     "attacks": {
+      "worked": 7,
+      "goals": 4,
+      "flagged": 7,
+      "flagged_rate": 1.0,
+      "flagged_ci95_by_goal": [
+       1.0,
+       1.0
+      ],
+      "holding_the_template": 7,
+      "injected_output_flagged": 7,
+      "injected_ci95_by_goal": [
+       1.0,
+       1.0
+      ],
+      "sink_alerted": 4,
+      "destination_rule": 1,
+      "destination_rate": 0.1429,
+      "harm_located": 7,
+      "flagged_before_harm": 6,
+      "flagged_before_harm_rate": 0.8571,
+      "median_seconds_to_harm": 3.77,
+      "blocked_in_time": {
+       "0.5": 0.8571,
+       "1": 0.8571,
+       "2": 0.8571,
+       "4": 0.2857,
+       "8": 0.1429,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 4,
+      "alerted": 4,
+      "alert_rate": 0.0412,
+      "alert_ci95": [
+       0.0103,
+       0.0825
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "claude-3-7-sonnet-20250219": {
+     "attacks": {
+      "worked": 47,
+      "goals": 13,
+      "flagged": 40,
+      "flagged_rate": 0.8511,
+      "flagged_ci95_by_goal": [
+       0.6341,
+       0.9737
+      ],
+      "holding_the_template": 47,
+      "injected_output_flagged": 40,
+      "injected_ci95_by_goal": [
+       0.6341,
+       0.9737
+      ],
+      "sink_alerted": 19,
+      "destination_rule": 5,
+      "destination_rate": 0.1064,
+      "harm_located": 45,
+      "flagged_before_harm": 38,
+      "flagged_before_harm_rate": 0.8444,
+      "median_seconds_to_harm": 5.33,
+      "blocked_in_time": {
+       "0.5": 0.8444,
+       "1": 0.8444,
+       "2": 0.8444,
+       "4": 0.5111,
+       "8": 0.3111,
+       "16": 0.0889
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 5,
+      "alerted": 5,
+      "alert_rate": 0.0515,
+      "alert_ci95": [
+       0.0103,
+       0.1031
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "gemini-1.5-pro-002": {
+     "attacks": {
+      "worked": 107,
+      "goals": 22,
+      "flagged": 93,
+      "flagged_rate": 0.8692,
+      "flagged_ci95_by_goal": [
+       0.775,
+       0.95
+      ],
+      "holding_the_template": 107,
+      "injected_output_flagged": 93,
+      "injected_ci95_by_goal": [
+       0.775,
+       0.95
+      ],
+      "sink_alerted": 60,
+      "destination_rule": 25,
+      "destination_rate": 0.2336,
+      "harm_located": 102,
+      "flagged_before_harm": 80,
+      "flagged_before_harm_rate": 0.7843,
+      "median_seconds_to_harm": 10.73,
+      "blocked_in_time": {
+       "0.5": 0.7843,
+       "1": 0.7843,
+       "2": 0.7843,
+       "4": 0.7157,
+       "8": 0.5196,
+       "16": 0.2745
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 4,
+      "alerted": 4,
+      "alert_rate": 0.0412,
+      "alert_ci95": [
+       0.0103,
+       0.0825
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "gemini-2.0-flash-001": {
+     "attacks": {
+      "worked": 134,
+      "goals": 26,
+      "flagged": 110,
+      "flagged_rate": 0.8209,
+      "flagged_ci95_by_goal": [
+       0.6944,
+       0.928
+      ],
+      "holding_the_template": 134,
+      "injected_output_flagged": 110,
+      "injected_ci95_by_goal": [
+       0.6944,
+       0.928
+      ],
+      "sink_alerted": 85,
+      "destination_rule": 35,
+      "destination_rate": 0.2612,
+      "harm_located": 130,
+      "flagged_before_harm": 94,
+      "flagged_before_harm_rate": 0.7231,
+      "median_seconds_to_harm": 2.15,
+      "blocked_in_time": {
+       "0.5": 0.7231,
+       "1": 0.7154,
+       "2": 0.3923,
+       "4": 0.1154,
+       "8": 0.0231,
+       "16": 0.0077
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 4,
+      "alerted": 4,
+      "alert_rate": 0.0412,
+      "alert_ci95": [
+       0.0103,
+       0.0825
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "command-r-plus": {
+     "attacks": {
+      "worked": 6,
+      "goals": 5,
+      "flagged": 6,
+      "flagged_rate": 1.0,
+      "flagged_ci95_by_goal": [
+       1.0,
+       1.0
+      ],
+      "holding_the_template": 6,
+      "injected_output_flagged": 6,
+      "injected_ci95_by_goal": [
+       1.0,
+       1.0
+      ],
+      "sink_alerted": 5,
+      "destination_rule": 5,
+      "destination_rate": 0.8333,
+      "harm_located": 6,
+      "flagged_before_harm": 6,
+      "flagged_before_harm_rate": 1.0,
+      "median_seconds_to_harm": 4.94,
+      "blocked_in_time": {
+       "0.5": 1.0,
+       "1": 1.0,
+       "2": 1.0,
+       "4": 0.8333,
+       "8": 0.3333,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 3,
+      "alerted": 3,
+      "alert_rate": 0.0309,
+      "alert_ci95": [
+       0.0,
+       0.0722
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "meta-llama_Llama-3.3-70B-Instruct": {
+     "attacks": {
+      "worked": 219,
+      "goals": 28,
+      "flagged": 170,
+      "flagged_rate": 0.7763,
+      "flagged_ci95_by_goal": [
+       0.6367,
+       0.9193
+      ],
+      "holding_the_template": 219,
+      "injected_output_flagged": 168,
+      "injected_ci95_by_goal": [
+       0.622,
+       0.9125
+      ],
+      "sink_alerted": 127,
+      "destination_rule": 90,
+      "destination_rate": 0.411,
+      "harm_located": 208,
+      "flagged_before_harm": 152,
+      "flagged_before_harm_rate": 0.7308,
+      "median_seconds_to_harm": 2.24,
+      "blocked_in_time": {
+       "0.5": 0.7308,
+       "1": 0.7067,
+       "2": 0.4375,
+       "4": 0.1683,
+       "8": 0.0288,
+       "16": 0.0048
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 4,
+      "alerted": 4,
+      "alert_rate": 0.0412,
+      "alert_ci95": [
+       0.0103,
+       0.0825
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "gpt-4o-2024-05-13-transformers_pi_detector": {
+     "attacks": {
+      "worked": 50,
+      "goals": 7,
+      "flagged": 28,
+      "flagged_rate": 0.56,
+      "flagged_ci95_by_goal": [
+       0.2346,
+       1.0
+      ],
+      "holding_the_template": 50,
+      "injected_output_flagged": 28,
+      "injected_ci95_by_goal": [
+       0.2346,
+       1.0
+      ],
+      "sink_alerted": 18,
+      "destination_rule": 11,
+      "destination_rate": 0.22,
+      "harm_located": 50,
+      "flagged_before_harm": 28,
+      "flagged_before_harm_rate": 0.56,
+      "median_seconds_to_harm": 3.08,
+      "blocked_in_time": {
+       "0.5": 0.56,
+       "1": 0.54,
+       "2": 0.46,
+       "4": 0.06,
+       "8": 0.0,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 0,
+      "alerted": 0,
+      "alert_rate": 0.0,
+      "alert_ci95": [
+       0.0,
+       0.0
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "gpt-4o-2024-05-13-tool_filter": {
+     "attacks": {
+      "worked": 43,
+      "goals": 12,
+      "flagged": 33,
+      "flagged_rate": 0.7674,
+      "flagged_ci95_by_goal": [
+       0.4912,
+       0.9744
+      ],
+      "holding_the_template": 43,
+      "injected_output_flagged": 33,
+      "injected_ci95_by_goal": [
+       0.4912,
+       0.9744
+      ],
+      "sink_alerted": 21,
+      "destination_rule": 16,
+      "destination_rate": 0.3721,
+      "harm_located": 37,
+      "flagged_before_harm": 28,
+      "flagged_before_harm_rate": 0.7568,
+      "median_seconds_to_harm": 2.55,
+      "blocked_in_time": {
+       "0.5": 0.7568,
+       "1": 0.7568,
+       "2": 0.4324,
+       "4": 0.1892,
+       "8": 0.0541,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 4,
+      "alerted": 4,
+      "alert_rate": 0.0412,
+      "alert_ci95": [
+       0.0103,
+       0.0825
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "gpt-4o-2024-05-13-spotlighting_with_delimiting": {
+     "attacks": {
+      "worked": 262,
+      "goals": 21,
+      "flagged": 215,
+      "flagged_rate": 0.8206,
+      "flagged_ci95_by_goal": [
+       0.6774,
+       0.9567
+      ],
+      "holding_the_template": 262,
+      "injected_output_flagged": 215,
+      "injected_ci95_by_goal": [
+       0.6774,
+       0.9567
+      ],
+      "sink_alerted": 154,
+      "destination_rule": 107,
+      "destination_rate": 0.4084,
+      "harm_located": 262,
+      "flagged_before_harm": 205,
+      "flagged_before_harm_rate": 0.7824,
+      "median_seconds_to_harm": 2.21,
+      "blocked_in_time": {
+       "0.5": 0.7824,
+       "1": 0.7748,
+       "2": 0.4427,
+       "4": 0.0687,
+       "8": 0.0191,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 4,
+      "alerted": 4,
+      "alert_rate": 0.0412,
+      "alert_ci95": [
+       0.0103,
+       0.0825
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "gpt-4o-2024-05-13-repeat_user_prompt": {
+     "attacks": {
+      "worked": 175,
+      "goals": 20,
+      "flagged": 135,
+      "flagged_rate": 0.7714,
+      "flagged_ci95_by_goal": [
+       0.5597,
+       0.9451
+      ],
+      "holding_the_template": 175,
+      "injected_output_flagged": 135,
+      "injected_ci95_by_goal": [
+       0.5597,
+       0.9451
+      ],
+      "sink_alerted": 103,
+      "destination_rule": 64,
+      "destination_rate": 0.3657,
+      "harm_located": 170,
+      "flagged_before_harm": 125,
+      "flagged_before_harm_rate": 0.7353,
+      "median_seconds_to_harm": 2.23,
+      "blocked_in_time": {
+       "0.5": 0.7353,
+       "1": 0.7118,
+       "2": 0.4176,
+       "4": 0.0941,
+       "8": 0.0118,
+       "16": 0.0
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 5,
+      "alerted": 5,
+      "alert_rate": 0.0515,
+      "alert_ci95": [
+       0.0103,
+       0.1031
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    },
+    "Meta-SecAlign-70B": {
+     "attacks": {
+      "worked": 21,
+      "goals": 14,
+      "flagged": 20,
+      "flagged_rate": 0.9524,
+      "flagged_ci95_by_goal": [
+       0.8333,
+       1.0
+      ],
+      "holding_the_template": 21,
+      "injected_output_flagged": 20,
+      "injected_ci95_by_goal": [
+       0.8333,
+       1.0
+      ],
+      "sink_alerted": 17,
+      "destination_rule": 12,
+      "destination_rate": 0.5714,
+      "harm_located": 21,
+      "flagged_before_harm": 20,
+      "flagged_before_harm_rate": 0.9524,
+      "median_seconds_to_harm": 5.32,
+      "blocked_in_time": {
+       "0.5": 0.9524,
+       "1": 0.9524,
+       "2": 0.9524,
+       "4": 0.5714,
+       "8": 0.1905,
+       "16": 0.0476
+      }
+     },
+     "honest": {
+      "runs": 97,
+      "tasks": 97,
+      "tasks_alerted": 5,
+      "alerted": 5,
+      "alert_rate": 0.0515,
+      "alert_ci95": [
+       0.0103,
+       0.1031
+      ],
+      "sink_alerted": 0,
+      "sink_rate": 0.0,
+      "sink_ci95": [
+       0.0,
+       0.0
+      ],
+      "destination_rule": 0,
+      "flag_then_send": 0
+     }
+    }
+   },
+   "by_attack": {
+    "ignore_previous": {
+     "worked": 34,
+     "goals": 11,
+     "flagged": 34,
+     "flagged_rate": 1.0,
+     "flagged_ci95_by_goal": [
+      1.0,
+      1.0
+     ],
+     "holding_the_template": 0,
+     "injected_output_flagged": 0,
+     "injected_ci95_by_goal": [
+      0.0,
+      0.0
+     ],
+     "sink_alerted": 21,
+     "destination_rule": 9,
+     "destination_rate": 0.2647,
+     "harm_located": 34,
+     "flagged_before_harm": 34,
+     "flagged_before_harm_rate": 1.0,
+     "median_seconds_to_harm": 1.88,
+     "blocked_in_time": {
+      "0.5": 1.0,
+      "1": 0.9412,
+      "2": 0.4706,
+      "4": 0.1765,
+      "8": 0.0,
+      "16": 0.0
+     }
+    },
+    "direct": {
+     "worked": 23,
+     "goals": 11,
+     "flagged": 19,
+     "flagged_rate": 0.8261,
+     "flagged_ci95_by_goal": [
+      0.6316,
+      0.9583
+     ],
+     "holding_the_template": 0,
+     "injected_output_flagged": 0,
+     "injected_ci95_by_goal": [
+      0.0,
+      0.0
+     ],
+     "sink_alerted": 14,
+     "destination_rule": 13,
+     "destination_rate": 0.5652,
+     "harm_located": 23,
+     "flagged_before_harm": 19,
+     "flagged_before_harm_rate": 0.8261,
+     "median_seconds_to_harm": 2.86,
+     "blocked_in_time": {
+      "0.5": 0.8261,
+      "1": 0.8261,
+      "2": 0.6957,
+      "4": 0.1304,
+      "8": 0.0,
+      "16": 0.0
+     }
+    },
+    "tool_knowledge": {
+     "worked": 217,
+     "goals": 23,
+     "flagged": 147,
+     "flagged_rate": 0.6774,
+     "flagged_ci95_by_goal": [
+      0.5311,
+      0.8326
+     ],
+     "holding_the_template": 217,
+     "injected_output_flagged": 147,
+     "injected_ci95_by_goal": [
+      0.5311,
+      0.8326
+     ],
+     "sink_alerted": 117,
+     "destination_rule": 70,
+     "destination_rate": 0.3226,
+     "harm_located": 212,
+     "flagged_before_harm": 122,
+     "flagged_before_harm_rate": 0.5755,
+     "median_seconds_to_harm": 2.04,
+     "blocked_in_time": {
+      "0.5": 0.5755,
+      "1": 0.5566,
+      "2": 0.2972,
+      "4": 0.0519,
+      "8": 0.0142,
+      "16": 0.0
+     }
+    },
+    "injecagent": {
+     "worked": 36,
+     "goals": 12,
+     "flagged": 36,
+     "flagged_rate": 1.0,
+     "flagged_ci95_by_goal": [
+      1.0,
+      1.0
+     ],
+     "holding_the_template": 0,
+     "injected_output_flagged": 0,
+     "injected_ci95_by_goal": [
+      0.0,
+      0.0
+     ],
+     "sink_alerted": 20,
+     "destination_rule": 15,
+     "destination_rate": 0.4167,
+     "harm_located": 36,
+     "flagged_before_harm": 35,
+     "flagged_before_harm_rate": 0.9722,
+     "median_seconds_to_harm": 2.58,
+     "blocked_in_time": {
+      "0.5": 0.9722,
+      "1": 0.9722,
+      "2": 0.5278,
+      "4": 0.0556,
+      "8": 0.0,
+      "16": 0.0
+     }
+    },
+    "system_message": {
+     "worked": 0,
+     "goals": 0,
+     "flagged": 0,
+     "flagged_rate": null,
+     "flagged_ci95_by_goal": null,
+     "holding_the_template": 0,
+     "injected_output_flagged": 0,
+     "injected_ci95_by_goal": null,
+     "sink_alerted": 0,
+     "destination_rule": 0,
+     "destination_rate": null,
+     "harm_located": 0,
+     "flagged_before_harm": 0,
+     "flagged_before_harm_rate": null,
+     "median_seconds_to_harm": null,
+     "blocked_in_time": {}
+    }
+   },
+   "undefended": {
+    "attacks": {
+     "worked": 991,
+     "goals": 32,
+     "flagged": 763,
+     "flagged_rate": 0.7699,
+     "flagged_ci95_by_goal": [
+      0.6239,
+      0.9094
+     ],
+     "holding_the_template": 989,
+     "injected_output_flagged": 761,
+     "injected_ci95_by_goal": [
+      0.6218,
+      0.9083
+     ],
+     "sink_alerted": 561,
+     "destination_rule": 345,
+     "destination_rate": 0.3481,
+     "harm_located": 961,
+     "flagged_before_harm": 698,
+     "flagged_before_harm_rate": 0.7263,
+     "median_seconds_to_harm": 2.29,
+     "blocked_in_time": {
+      "0.5": 0.7263,
+      "1": 0.6733,
+      "2": 0.4204,
+      "4": 0.179,
+      "8": 0.0864,
+      "16": 0.0354
+     }
+    },
+    "honest": {
+     "runs": 776,
+     "tasks": 97,
+     "tasks_alerted": 8,
+     "alerted": 33,
+     "alert_rate": 0.0425,
+     "alert_ci95": [
+      0.0116,
+      0.0799
+     ],
+     "sink_alerted": 0,
+     "sink_rate": 0.0,
+     "sink_ci95": [
+      0.0,
+      0.0
+     ],
+     "destination_rule": 0,
+     "flag_then_send": 0
+    }
+   }
+  }
+ },
+ "pipelines": {
+  "gpt-4o-2024-05-13": {
+   "attack_runs": 629,
+   "attacks_worked": 300,
+   "attack_success": 0.4769,
+   "honest_runs": 97,
+   "honest_utility": 0.6907
+  },
+  "gpt-4o-mini-2024-07-18": {
+   "attack_runs": 629,
+   "attacks_worked": 171,
+   "attack_success": 0.2719,
+   "honest_runs": 97,
+   "honest_utility": 0.6804
+  },
+  "claude-3-5-sonnet-20241022": {
+   "attack_runs": 629,
+   "attacks_worked": 7,
+   "attack_success": 0.0111,
+   "honest_runs": 97,
+   "honest_utility": 0.7938
+  },
+  "claude-3-7-sonnet-20250219": {
+   "attack_runs": 949,
+   "attacks_worked": 47,
+   "attack_success": 0.0495,
+   "honest_runs": 97,
+   "honest_utility": 0.8866
+  },
+  "gemini-1.5-pro-002": {
+   "attack_runs": 629,
+   "attacks_worked": 107,
+   "attack_success": 0.1701,
+   "honest_runs": 97,
+   "honest_utility": 0.6186
+  },
+  "gemini-2.0-flash-001": {
+   "attack_runs": 949,
+   "attacks_worked": 134,
+   "attack_success": 0.1412,
+   "honest_runs": 97,
+   "honest_utility": 0.433
+  },
+  "command-r-plus": {
+   "attack_runs": 629,
+   "attacks_worked": 28,
+   "attack_success": 0.0445,
+   "honest_runs": 97,
+   "honest_utility": 0.2474
+  },
+  "meta-llama_Llama-3.3-70B-Instruct": {
+   "attack_runs": 949,
+   "attacks_worked": 219,
+   "attack_success": 0.2308,
+   "honest_runs": 97,
+   "honest_utility": 0.5773
+  },
+  "gpt-4o-2024-05-13-transformers_pi_detector": {
+   "attack_runs": 629,
+   "attacks_worked": 50,
+   "attack_success": 0.0795,
+   "honest_runs": 97,
+   "honest_utility": 0.4124
+  },
+  "gpt-4o-2024-05-13-tool_filter": {
+   "attack_runs": 629,
+   "attacks_worked": 43,
+   "attack_success": 0.0684,
+   "honest_runs": 97,
+   "honest_utility": 0.7216
+  },
+  "gpt-4o-2024-05-13-spotlighting_with_delimiting": {
+   "attack_runs": 629,
+   "attacks_worked": 262,
+   "attack_success": 0.4165,
+   "honest_runs": 97,
+   "honest_utility": 0.7216
+  },
+  "gpt-4o-2024-05-13-repeat_user_prompt": {
+   "attack_runs": 629,
+   "attacks_worked": 175,
+   "attack_success": 0.2782,
+   "honest_runs": 97,
+   "honest_utility": 0.8454
+  },
+  "Meta-SecAlign-70B": {
+   "attack_runs": 949,
+   "attacks_worked": 21,
+   "attack_success": 0.0221,
+   "honest_runs": 97,
+   "honest_utility": 0.7732
+  }
+ },
+ "paired": {
+  "attacks": 991,
+  "only_classifier": 78,
+  "only_cascade": 71,
+  "difference": 0.0071,
+  "difference_ci95_by_goal": [
+   -0.1135,
+   0.1184
+  ]
+ }
+}

@@ -1,0 +1,154 @@
+{
+ "sets": {
+  "deepset": {
+   "texts": 662,
+   "positives": 263
+  },
+  "owasp_memory": {
+   "texts": 75,
+   "positives": 60
+  },
+  "hippo_emails": {
+   "texts": 25,
+   "positives": 25
+  },
+  "hippo_inbox": {
+   "texts": 18,
+   "positives": 0
+  }
+ },
+ "sample": 0,
+ "detectors": {
+  "cascade": {
+   "timing": {
+    "texts": 1560,
+    "computed_now": 2,
+    "busy_s": 28.525062300264835
+   },
+   "deepset": {
+    "bare": {
+     "positives": 263,
+     "negatives": 399,
+     "recall": 0.2662,
+     "recall_ci95": [
+      0.2164,
+      0.3227
+     ],
+     "false_alarm_rate": 0.0025,
+     "false_alarm_ci95": [
+      0.0004,
+      0.0141
+     ],
+     "precision": 0.9859,
+     "f1": 0.4192
+    },
+    "buried": {
+     "positives": 263,
+     "negatives": 399,
+     "recall": 0.1331,
+     "recall_ci95": [
+      0.0973,
+      0.1795
+     ],
+     "false_alarm_rate": 0.0,
+     "false_alarm_ci95": [
+      0.0,
+      0.0095
+     ],
+     "precision": 1.0,
+     "f1": 0.2349
+    }
+   },
+   "owasp_memory": {
+    "bare": {
+     "positives": 60,
+     "negatives": 15,
+     "recall": 0.5667,
+     "recall_ci95": [
+      0.441,
+      0.6843
+     ],
+     "false_alarm_rate": 0.0,
+     "false_alarm_ci95": [
+      0.0,
+      0.2039
+     ],
+     "precision": 1.0,
+     "f1": 0.7234
+    },
+    "buried": {
+     "positives": 60,
+     "negatives": 15,
+     "recall": 0.3167,
+     "recall_ci95": [
+      0.2131,
+      0.4423
+     ],
+     "false_alarm_rate": 0.0,
+     "false_alarm_ci95": [
+      0.0,
+      0.2039
+     ],
+     "precision": 1.0,
+     "f1": 0.4811
+    }
+   },
+   "hippo_emails": {
+    "bare": {
+     "positives": 25,
+     "negatives": 0,
+     "recall": 1.0,
+     "recall_ci95": [
+      0.8668,
+      1.0
+     ],
+     "false_alarm_rate": null,
+     "false_alarm_ci95": null,
+     "precision": 1.0,
+     "f1": 1.0
+    },
+    "buried": {
+     "positives": 25,
+     "negatives": 0,
+     "recall": 0.96,
+     "recall_ci95": [
+      0.8046,
+      0.9929
+     ],
+     "false_alarm_rate": null,
+     "false_alarm_ci95": null,
+     "precision": 1.0,
+     "f1": 0.9796
+    }
+   },
+   "hippo_inbox": {
+    "bare": {
+     "positives": 0,
+     "negatives": 18,
+     "recall": null,
+     "recall_ci95": null,
+     "false_alarm_rate": 0.0,
+     "false_alarm_ci95": [
+      0.0,
+      0.1759
+     ],
+     "precision": null,
+     "f1": 0.0
+    },
+    "buried": {
+     "positives": 0,
+     "negatives": 18,
+     "recall": null,
+     "recall_ci95": null,
+     "false_alarm_rate": 0.0,
+     "false_alarm_ci95": [
+      0.0,
+      0.1759
+     ],
+     "precision": null,
+     "f1": 0.0
+    }
+   }
+  }
+ }
+}

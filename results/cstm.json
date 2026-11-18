@@ -1,0 +1,173 @@
+{
+ "source": "CSTM-Bench, arXiv:2604.21131",
+ "detectors": {
+  "pattern": {
+   "dilution": {
+    "attack_scenarios": 26,
+    "attack_flagged": 5,
+    "recall": 0.1923,
+    "recall_ci95": [
+     0.0851,
+     0.3788
+    ],
+    "benign_scenarios": 28,
+    "benign_flagged": 1,
+    "false_alarm_rate": 0.0357,
+    "false_alarm_ci95": [
+     0.0063,
+     0.1771
+    ],
+    "benign_hard_flagged": 1,
+    "benign_pristine_flagged": 0,
+    "attack_fragments": 109,
+    "attack_fragments_flagged": 4,
+    "fragment_recall": 0.0367,
+    "timing": {
+     "texts": 1084,
+     "computed_now": 0,
+     "busy_s": 0.0
+    },
+    "messages": 1084
+   },
+   "cross_session": {
+    "attack_scenarios": 26,
+    "attack_flagged": 5,
+    "recall": 0.1923,
+    "recall_ci95": [
+     0.0851,
+     0.3788
+    ],
+    "benign_scenarios": 28,
+    "benign_flagged": 1,
+    "false_alarm_rate": 0.0357,
+    "false_alarm_ci95": [
+     0.0063,
+     0.1771
+    ],
+    "benign_hard_flagged": 1,
+    "benign_pristine_flagged": 0,
+    "attack_fragments": 109,
+    "attack_fragments_flagged": 2,
+    "fragment_recall": 0.0183,
+    "timing": {
+     "texts": 1084,
+     "computed_now": 0,
+     "busy_s": 0.0
+    },
+    "messages": 1084
+   }
+  },
+  "classifier": {
+   "dilution": {
+    "attack_scenarios": 26,
+    "attack_flagged": 26,
+    "recall": 1.0,
+    "recall_ci95": [
+     0.8713,
+     1.0
+    ],
+    "benign_scenarios": 28,
+    "benign_flagged": 28,
+    "false_alarm_rate": 1.0,
+    "false_alarm_ci95": [
+     0.8794,
+     1.0
+    ],
+    "benign_hard_flagged": 14,
+    "benign_pristine_flagged": 14,
+    "attack_fragments": 109,
+    "attack_fragments_flagged": 77,
+    "fragment_recall": 0.7064,
+    "timing": {
+     "texts": 1084,
+     "computed_now": 0,
+     "busy_s": 0.0
+    },
+    "messages": 1084
+   },
+   "cross_session": {
+    "attack_scenarios": 26,
+    "attack_flagged": 26,
+    "recall": 1.0,
+    "recall_ci95": [
+     0.8713,
+     1.0
+    ],
+    "benign_scenarios": 28,
+    "benign_flagged": 28,
+    "false_alarm_rate": 1.0,
+    "false_alarm_ci95": [
+     0.8794,
+     1.0
+    ],
+    "benign_hard_flagged": 14,
+    "benign_pristine_flagged": 14,
+    "attack_fragments": 109,
+    "attack_fragments_flagged": 79,
+    "fragment_recall": 0.7248,
+    "timing": {
+     "texts": 1084,
+     "computed_now": 0,
+     "busy_s": 0.0
+    },
+    "messages": 1084
+   }
+  },
+  "cascade": {
+   "dilution": {
+    "attack_scenarios": 26,
+    "attack_flagged": 21,
+    "recall": 0.8077,
+    "recall_ci95": [
+     0.6212,
+     0.9149
+    ],
+    "benign_scenarios": 28,
+    "benign_flagged": 10,
+    "false_alarm_rate": 0.3571,
+    "false_alarm_ci95": [
+     0.2071,
+     0.5417
+    ],
+    "benign_hard_flagged": 5,
+    "benign_pristine_flagged": 5,
+    "attack_fragments": 109,
+    "attack_fragments_flagged": 23,
+    "fragment_recall": 0.211,
+    "timing": {
+     "texts": 1084,
+     "computed_now": 0,
+     "busy_s": 0.0
+    },
+    "messages": 1084
+   },
+   "cross_session": {
+    "attack_scenarios": 26,
+    "attack_flagged": 16,
+    "recall": 0.6154,
+    "recall_ci95": [
+     0.4253,
+     0.7757
+    ],
+    "benign_scenarios": 28,
+    "benign_flagged": 10,
+    "false_alarm_rate": 0.3571,
+    "false_alarm_ci95": [
+     0.2071,
+     0.5417
+    ],
+    "benign_hard_flagged": 5,
+    "benign_pristine_flagged": 5,
+    "attack_fragments": 109,
+    "attack_fragments_flagged": 15,
+    "fragment_recall": 0.1376,
+    "timing": {
+     "texts": 1084,
+     "computed_now": 0,
+     "busy_s": 0.0
+    },
+    "messages": 1084
+   }
+  }
+ }
+}

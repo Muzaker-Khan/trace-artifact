@@ -1,0 +1,52 @@
+{
+ "notes_alone": {
+  "texts": 16,
+  "classifier_flagged": 0,
+  "classifier_rate": 0.0,
+  "classifier_ci95": [
+   0.0,
+   0.1936
+  ],
+  "cascade_flagged": 0,
+  "cascade_rate": 0.0,
+  "cascade_ci95": [
+   0.0,
+   0.1936
+  ]
+ },
+ "headings_alone": {
+  "texts": 4,
+  "classifier_flagged": 1,
+  "classifier_rate": 0.25,
+  "classifier_ci95": [
+   0.0456,
+   0.6994
+  ],
+  "cascade_flagged": 1,
+  "cascade_rate": 0.25,
+  "cascade_ci95": [
+   0.0456,
+   0.6994
+  ]
+ },
+ "heading_then_note": {
+  "texts": 48,
+  "classifier_flagged": 5,
+  "classifier_rate": 0.1042,
+  "classifier_ci95": [
+   0.0453,
+   0.2217
+  ],
+  "cascade_flagged": 0,
+  "cascade_rate": 0.0,
+  "cascade_ci95": [
+   0.0,
+   0.0741
+  ]
+ },
+ "scores": {
+  "harness_line": 0.999,
+  "plain_note": 0.0,
+  "heading_with_note": 0.985
+ }
+}

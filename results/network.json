@@ -1,0 +1,260 @@
+{
+ "events": 15000,
+ "workers": 4,
+ "reference_alerts": 331,
+ "emulator": "ghcr.io/shopify/toxiproxy:2.12.0",
+ "rows": [
+  {
+   "network": "no delay",
+   "strategy": "summary",
+   "elapsed_s_mean": 0.89,
+   "elapsed_s_runs": [
+    0.946,
+    0.859,
+    0.865
+   ],
+   "throughput_eps": 16849.9,
+   "all_identical": true,
+   "worker_bytes": 278139,
+   "worker_messages": 410
+  },
+  {
+   "network": "no delay",
+   "strategy": "thin",
+   "elapsed_s_mean": 0.881,
+   "elapsed_s_runs": [
+    0.833,
+    0.903,
+    0.909
+   ],
+   "throughput_eps": 17020.1,
+   "all_identical": true,
+   "worker_bytes": 1872796,
+   "worker_messages": 421
+  },
+  {
+   "network": "no delay",
+   "strategy": "central",
+   "elapsed_s_mean": 0.866,
+   "elapsed_s_runs": [
+    0.861,
+    0.947,
+    0.789
+   ],
+   "throughput_eps": 17325.1,
+   "all_identical": true,
+   "worker_bytes": 2396767,
+   "worker_messages": 421
+  },
+  {
+   "network": "1 ms each way",
+   "strategy": "summary",
+   "elapsed_s_mean": 0.918,
+   "elapsed_s_runs": [
+    0.813,
+    0.801,
+    1.14
+   ],
+   "throughput_eps": 16338.8,
+   "all_identical": true,
+   "worker_bytes": 278121,
+   "worker_messages": 410
+  },
+  {
+   "network": "1 ms each way",
+   "strategy": "thin",
+   "elapsed_s_mean": 1.045,
+   "elapsed_s_runs": [
+    1.062,
+    1.028,
+    1.044
+   ],
+   "throughput_eps": 14360.9,
+   "all_identical": true,
+   "worker_bytes": 1872986,
+   "worker_messages": 421
+  },
+  {
+   "network": "1 ms each way",
+   "strategy": "central",
+   "elapsed_s_mean": 1.141,
+   "elapsed_s_runs": [
+    1.108,
+    1.39,
+    0.927
+   ],
+   "throughput_eps": 13141.3,
+   "all_identical": true,
+   "worker_bytes": 2396778,
+   "worker_messages": 421
+  },
+  {
+   "network": "5 ms each way",
+   "strategy": "summary",
+   "elapsed_s_mean": 1.577,
+   "elapsed_s_runs": [
+    1.659,
+    1.705,
+    1.367
+   ],
+   "throughput_eps": 9511.6,
+   "all_identical": true,
+   "worker_bytes": 278246,
+   "worker_messages": 410
+  },
+  {
+   "network": "5 ms each way",
+   "strategy": "thin",
+   "elapsed_s_mean": 1.439,
+   "elapsed_s_runs": [
+    1.329,
+    1.594,
+    1.393
+   ],
+   "throughput_eps": 10424.8,
+   "all_identical": true,
+   "worker_bytes": 1872889,
+   "worker_messages": 421
+  },
+  {
+   "network": "5 ms each way",
+   "strategy": "central",
+   "elapsed_s_mean": 1.448,
+   "elapsed_s_runs": [
+    1.432,
+    1.41,
+    1.502
+   ],
+   "throughput_eps": 10360.5,
+   "all_identical": true,
+   "worker_bytes": 2396992,
+   "worker_messages": 421
+  },
+  {
+   "network": "20 ms each way",
+   "strategy": "summary",
+   "elapsed_s_mean": 5.302,
+   "elapsed_s_runs": [
+    5.276,
+    5.346,
+    5.285
+   ],
+   "throughput_eps": 2829.0,
+   "all_identical": true,
+   "worker_bytes": 278360,
+   "worker_messages": 410
+  },
+  {
+   "network": "20 ms each way",
+   "strategy": "thin",
+   "elapsed_s_mean": 5.325,
+   "elapsed_s_runs": [
+    5.346,
+    5.285,
+    5.342
+   ],
+   "throughput_eps": 2817.2,
+   "all_identical": true,
+   "worker_bytes": 1873092,
+   "worker_messages": 421
+  },
+  {
+   "network": "20 ms each way",
+   "strategy": "central",
+   "elapsed_s_mean": 5.351,
+   "elapsed_s_runs": [
+    5.347,
+    5.34,
+    5.367
+   ],
+   "throughput_eps": 2803.1,
+   "all_identical": true,
+   "worker_bytes": 2396764,
+   "worker_messages": 421
+  },
+  {
+   "network": "1 ms, 100 Mbit/s",
+   "strategy": "summary",
+   "elapsed_s_mean": 0.684,
+   "elapsed_s_runs": [
+    0.504,
+    1.021,
+    0.527
+   ],
+   "throughput_eps": 21931.2,
+   "all_identical": true,
+   "worker_bytes": 278341,
+   "worker_messages": 410
+  },
+  {
+   "network": "1 ms, 100 Mbit/s",
+   "strategy": "thin",
+   "elapsed_s_mean": 0.61,
+   "elapsed_s_runs": [
+    0.633,
+    0.58,
+    0.616
+   ],
+   "throughput_eps": 24597.9,
+   "all_identical": true,
+   "worker_bytes": 1872986,
+   "worker_messages": 421
+  },
+  {
+   "network": "1 ms, 100 Mbit/s",
+   "strategy": "central",
+   "elapsed_s_mean": 0.768,
+   "elapsed_s_runs": [
+    0.86,
+    0.835,
+    0.611
+   ],
+   "throughput_eps": 19521.7,
+   "all_identical": true,
+   "worker_bytes": 2397080,
+   "worker_messages": 421
+  },
+  {
+   "network": "1 ms, 10 Mbit/s",
+   "strategy": "summary",
+   "elapsed_s_mean": 2.917,
+   "elapsed_s_runs": [
+    2.934,
+    2.895,
+    2.921
+   ],
+   "throughput_eps": 5142.6,
+   "all_identical": true,
+   "worker_bytes": 277920,
+   "worker_messages": 410
+  },
+  {
+   "network": "1 ms, 10 Mbit/s",
+   "strategy": "thin",
+   "elapsed_s_mean": 2.943,
+   "elapsed_s_runs": [
+    2.946,
+    2.942,
+    2.941
+   ],
+   "throughput_eps": 5097.0,
+   "all_identical": true,
+   "worker_bytes": 1872994,
+   "worker_messages": 421
+  },
+  {
+   "network": "1 ms, 10 Mbit/s",
+   "strategy": "central",
+   "elapsed_s_mean": 3.004,
+   "elapsed_s_runs": [
+    2.985,
+    2.993,
+    3.035
+   ],
+   "throughput_eps": 4992.7,
+   "all_identical": true,
+   "worker_bytes": 2397083,
+   "worker_messages": 421
+  }
+ ]
+}

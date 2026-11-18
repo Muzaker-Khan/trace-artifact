@@ -1,0 +1,472 @@
+{
+ "source": "ATBench, arXiv:2604.02022",
+ "trajectories": 1000,
+ "distinct_outputs": 2927,
+ "detectors": {
+  "pattern": {
+   "unsafe": 497,
+   "safe": 503,
+   "true_positives": 50,
+   "false_positives": 4,
+   "recall": 0.1006,
+   "recall_ci95": [
+    0.0771,
+    0.1302
+   ],
+   "false_alarm_rate": 0.008,
+   "false_alarm_ci95": [
+    0.0031,
+    0.0203
+   ],
+   "safe_no_risk_source": 250,
+   "false_alarm_no_risk_source": 0.008,
+   "false_alarm_no_risk_source_ci95": [
+    0.0022,
+    0.0287
+   ],
+   "harm_alerts_on_safe": 1,
+   "harm_alert_rate_on_safe": 0.002,
+   "harm_alert_rate_on_safe_ci95": [
+    0.0004,
+    0.0112
+   ],
+   "harm_alerts_on_unsafe": 12,
+   "harm_alert_rate_on_unsafe": 0.0241,
+   "precision": 0.9259,
+   "f1": 0.1815,
+   "in_scope_recall": 0.1919,
+   "in_scope_cases": 198,
+   "in_scope_recall_ci95": [
+    0.1431,
+    0.2524
+   ],
+   "recall_by_source": {
+    "corrupted_tool_feedback": {
+     "cases": 44,
+     "flagged": 1,
+     "recall": 0.0227
+    },
+    "direct_prompt_injection": {
+     "cases": 39,
+     "flagged": 0,
+     "recall": 0.0
+    },
+    "indirect_prompt_injection": {
+     "cases": 77,
+     "flagged": 37,
+     "recall": 0.4805
+    },
+    "inherent_agent_failures": {
+     "cases": 135,
+     "flagged": 0,
+     "recall": 0.0
+    },
+    "malicious_tool_execution": {
+     "cases": 25,
+     "flagged": 0,
+     "recall": 0.0
+    },
+    "malicious_user_instruction_or_jailbreak": {
+     "cases": 61,
+     "flagged": 2,
+     "recall": 0.0328
+    },
+    "tool_description_injection": {
+     "cases": 52,
+     "flagged": 0,
+     "recall": 0.0
+    },
+    "unreliable_or_misinformation": {
+     "cases": 64,
+     "flagged": 10,
+     "recall": 0.1562
+    }
+   },
+   "rules_on_unsafe": {
+    "response_injection": 48,
+    "injection_exfiltration": 10,
+    "credential_exfiltration_chain": 1,
+    "credential_to_destructive_chain": 1
+   },
+   "rules_on_safe": {
+    "credential_exfiltration_chain": 1,
+    "response_injection": 3
+   },
+   "tool_calls": 2972,
+   "share_tool_calls_uncategorized": 0.895,
+   "categories": {
+    "unknown": 2660,
+    "network_egress": 269,
+    "filesystem_write": 27,
+    "credential_access": 9,
+    "destructive_file_op": 6,
+    "command_execution": 1
+   },
+   "timing": {
+    "texts": 2927,
+    "computed_now": 0,
+    "busy_s": 0.0
+   }
+  },
+  "classifier": {
+   "unsafe": 497,
+   "safe": 503,
+   "true_positives": 200,
+   "false_positives": 73,
+   "recall": 0.4024,
+   "recall_ci95": [
+    0.3602,
+    0.4461
+   ],
+   "false_alarm_rate": 0.1451,
+   "false_alarm_ci95": [
+    0.117,
+    0.1786
+   ],
+   "safe_no_risk_source": 250,
+   "false_alarm_no_risk_source": 0.148,
+   "false_alarm_no_risk_source_ci95": [
+    0.1093,
+    0.1973
+   ],
+   "harm_alerts_on_safe": 19,
+   "harm_alert_rate_on_safe": 0.0378,
+   "harm_alert_rate_on_safe_ci95": [
+    0.0243,
+    0.0582
+   ],
+   "harm_alerts_on_unsafe": 41,
+   "harm_alert_rate_on_unsafe": 0.0825,
+   "precision": 0.7326,
+   "f1": 0.5195,
+   "in_scope_recall": 0.5,
+   "in_scope_cases": 198,
+   "in_scope_recall_ci95": [
+    0.431,
+    0.569
+   ],
+   "recall_by_source": {
+    "corrupted_tool_feedback": {
+     "cases": 44,
+     "flagged": 33,
+     "recall": 0.75
+    },
+    "direct_prompt_injection": {
+     "cases": 39,
+     "flagged": 11,
+     "recall": 0.2821
+    },
+    "indirect_prompt_injection": {
+     "cases": 77,
+     "flagged": 51,
+     "recall": 0.6623
+    },
+    "inherent_agent_failures": {
+     "cases": 135,
+     "flagged": 35,
+     "recall": 0.2593
+    },
+    "malicious_tool_execution": {
+     "cases": 25,
+     "flagged": 7,
+     "recall": 0.28
+    },
+    "malicious_user_instruction_or_jailbreak": {
+     "cases": 61,
+     "flagged": 17,
+     "recall": 0.2787
+    },
+    "tool_description_injection": {
+     "cases": 52,
+     "flagged": 8,
+     "recall": 0.1538
+    },
+    "unreliable_or_misinformation": {
+     "cases": 64,
+     "flagged": 38,
+     "recall": 0.5938
+    }
+   },
+   "rules_on_unsafe": {
+    "response_injection": 199,
+    "injection_exfiltration": 39,
+    "credential_exfiltration_chain": 1,
+    "destination_exfiltration": 1,
+    "credential_to_destructive_chain": 1
+   },
+   "rules_on_safe": {
+    "response_injection": 72,
+    "credential_exfiltration_chain": 1,
+    "injection_exfiltration": 18,
+    "destination_exfiltration": 3
+   },
+   "tool_calls": 2972,
+   "share_tool_calls_uncategorized": 0.895,
+   "categories": {
+    "unknown": 2660,
+    "network_egress": 269,
+    "filesystem_write": 27,
+    "credential_access": 9,
+    "destructive_file_op": 6,
+    "command_execution": 1
+   },
+   "timing": {
+    "texts": 2927,
+    "computed_now": 0,
+    "busy_s": 0.0
+   }
+  },
+  "cascade": {
+   "unsafe": 497,
+   "safe": 503,
+   "true_positives": 94,
+   "false_positives": 19,
+   "recall": 0.1891,
+   "recall_ci95": [
+    0.1571,
+    0.2259
+   ],
+   "false_alarm_rate": 0.0378,
+   "false_alarm_ci95": [
+    0.0243,
+    0.0582
+   ],
+   "safe_no_risk_source": 250,
+   "false_alarm_no_risk_source": 0.008,
+   "false_alarm_no_risk_source_ci95": [
+    0.0022,
+    0.0287
+   ],
+   "harm_alerts_on_safe": 3,
+   "harm_alert_rate_on_safe": 0.006,
+   "harm_alert_rate_on_safe_ci95": [
+    0.002,
+    0.0174
+   ],
+   "harm_alerts_on_unsafe": 17,
+   "harm_alert_rate_on_unsafe": 0.0342,
+   "precision": 0.8319,
+   "f1": 0.3082,
+   "in_scope_recall": 0.3333,
+   "in_scope_cases": 198,
+   "in_scope_recall_ci95": [
+    0.2714,
+    0.4016
+   ],
+   "recall_by_source": {
+    "corrupted_tool_feedback": {
+     "cases": 44,
+     "flagged": 26,
+     "recall": 0.5909
+    },
+    "direct_prompt_injection": {
+     "cases": 39,
+     "flagged": 2,
+     "recall": 0.0513
+    },
+    "indirect_prompt_injection": {
+     "cases": 77,
+     "flagged": 34,
+     "recall": 0.4416
+    },
+    "inherent_agent_failures": {
+     "cases": 135,
+     "flagged": 10,
+     "recall": 0.0741
+    },
+    "malicious_tool_execution": {
+     "cases": 25,
+     "flagged": 5,
+     "recall": 0.2
+    },
+    "malicious_user_instruction_or_jailbreak": {
+     "cases": 61,
+     "flagged": 10,
+     "recall": 0.1639
+    },
+    "tool_description_injection": {
+     "cases": 52,
+     "flagged": 1,
+     "recall": 0.0192
+    },
+    "unreliable_or_misinformation": {
+     "cases": 64,
+     "flagged": 6,
+     "recall": 0.0938
+    }
+   },
+   "rules_on_unsafe": {
+    "response_injection": 92,
+    "injection_exfiltration": 15,
+    "credential_exfiltration_chain": 1,
+    "credential_to_destructive_chain": 1
+   },
+   "rules_on_safe": {
+    "response_injection": 18,
+    "credential_exfiltration_chain": 1,
+    "injection_exfiltration": 2
+   },
+   "tool_calls": 2972,
+   "share_tool_calls_uncategorized": 0.895,
+   "categories": {
+    "unknown": 2660,
+    "network_egress": 269,
+    "filesystem_write": 27,
+    "credential_access": 9,
+    "destructive_file_op": 6,
+    "command_execution": 1
+   },
+   "timing": {
+    "texts": 2927,
+    "computed_now": 0,
+    "busy_s": 0.0
+   }
+  },
+  "none": {
+   "unsafe": 497,
+   "safe": 503,
+   "true_positives": 2,
+   "false_positives": 1,
+   "recall": 0.004,
+   "recall_ci95": [
+    0.0011,
+    0.0146
+   ],
+   "false_alarm_rate": 0.002,
+   "false_alarm_ci95": [
+    0.0004,
+    0.0112
+   ],
+   "safe_no_risk_source": 250,
+   "false_alarm_no_risk_source": 0.004,
+   "false_alarm_no_risk_source_ci95": [
+    0.0007,
+    0.0223
+   ],
+   "harm_alerts_on_safe": 1,
+   "harm_alert_rate_on_safe": 0.002,
+   "harm_alert_rate_on_safe_ci95": [
+    0.0004,
+    0.0112
+   ],
+   "harm_alerts_on_unsafe": 2,
+   "harm_alert_rate_on_unsafe": 0.004,
+   "precision": 0.6667,
+   "f1": 0.008,
+   "in_scope_recall": 0.0,
+   "in_scope_cases": 198,
+   "in_scope_recall_ci95": [
+    0.0,
+    0.019
+   ],
+   "recall_by_source": {
+    "corrupted_tool_feedback": {
+     "cases": 44,
+     "flagged": 0,
+     "recall": 0.0
+    },
+    "direct_prompt_injection": {
+     "cases": 39,
+     "flagged": 0,
+     "recall": 0.0
+    },
+    "indirect_prompt_injection": {
+     "cases": 77,
+     "flagged": 0,
+     "recall": 0.0
+    },
+    "inherent_agent_failures": {
+     "cases": 135,
+     "flagged": 0,
+     "recall": 0.0
+    },
+    "malicious_tool_execution": {
+     "cases": 25,
+     "flagged": 0,
+     "recall": 0.0
+    },
+    "malicious_user_instruction_or_jailbreak": {
+     "cases": 61,
+     "flagged": 2,
+     "recall": 0.0328
+    },
+    "tool_description_injection": {
+     "cases": 52,
+     "flagged": 0,
+     "recall": 0.0
+    },
+    "unreliable_or_misinformation": {
+     "cases": 64,
+     "flagged": 0,
+     "recall": 0.0
+    }
+   },
+   "rules_on_unsafe": {
+    "credential_exfiltration_chain": 1,
+    "credential_to_destructive_chain": 1
+   },
+   "rules_on_safe": {
+    "credential_exfiltration_chain": 1
+   },
+   "tool_calls": 2972,
+   "share_tool_calls_uncategorized": 0.895,
+   "categories": {
+    "unknown": 2660,
+    "network_egress": 269,
+    "filesystem_write": 27,
+    "credential_access": 9,
+    "destructive_file_op": 6,
+    "command_execution": 1
+   },
+   "timing": {
+    "texts": 2927,
+    "computed_now": 0,
+    "busy_s": 0.0
+   }
+  }
+ },
+ "divergence": {
+  "keyword": [
+   {
+    "min_score": 1,
+    "recall": 0.5171,
+    "false_alarm_rate": 0.4652,
+    "precision": 0.5234,
+    "tp": 257,
+    "fp": 234
+   },
+   {
+    "min_score": 100,
+    "recall": 0.497,
+    "false_alarm_rate": 0.4652,
+    "precision": 0.5135,
+    "tp": 247,
+    "fp": 234
+   },
+   {
+    "min_score": 250,
+    "recall": 0.2877,
+    "false_alarm_rate": 0.2982,
+    "precision": 0.4881,
+    "tp": 143,
+    "fp": 150
+   },
+   {
+    "min_score": 500,
+    "recall": 0.0362,
+    "false_alarm_rate": 0.0835,
+    "precision": 0.3,
+    "tp": 18,
+    "fp": 42
+   },
+   {
+    "min_score": 800,
+    "recall": 0.0,
+    "false_alarm_rate": 0.0,
+    "precision": null,
+    "tp": 0,
+    "fp": 0
+   }
+  ]
+ }
+}

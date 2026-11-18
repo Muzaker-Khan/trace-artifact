@@ -1,0 +1,73 @@
+{
+ "source": "our own coding-agent sessions, local only",
+ "sessions": 25,
+ "tool_calls": 1611,
+ "span_days": 3.4,
+ "calls_by_tool": {
+  "http_request": 102,
+  "read_file": 265,
+  "search_web": 136,
+  "write_file": 522,
+  "search_files": 48,
+  "run_command": 538
+ },
+ "detectors": {
+  "pattern": {
+   "outputs_scanned": 1332,
+   "outputs_flagged": 33,
+   "flag_rate": 0.0248,
+   "alerts_by_rule": {
+    "response_injection": 34,
+    "injection_exfiltration": 10,
+    "taint_propagation_exfiltration": 1
+   },
+   "sessions_with_a_taint_alert": 7,
+   "taint_alerts_per_1000_calls": 6.83,
+   "sampled": false,
+   "timing": {
+    "texts": 1332,
+    "computed_now": 1,
+    "busy_s": 0.005669999867677689
+   }
+  },
+  "classifier": {
+   "outputs_scanned": 1332,
+   "outputs_flagged": 763,
+   "flag_rate": 0.5728,
+   "alerts_by_rule": {
+    "response_injection": 783,
+    "injection_exfiltration": 88,
+    "destination_exfiltration": 30,
+    "taint_propagation_exfiltration": 1
+   },
+   "sessions_with_a_taint_alert": 16,
+   "taint_alerts_per_1000_calls": 73.87,
+   "sampled": false,
+   "timing": {
+    "texts": 1332,
+    "computed_now": 1,
+    "busy_s": 2.046675599878654
+   }
+  },
+  "cascade": {
+   "outputs_scanned": 1332,
+   "outputs_flagged": 113,
+   "flag_rate": 0.0848,
+   "alerts_by_rule": {
+    "unconfirmed_injection": 669,
+    "response_injection": 114,
+    "injection_exfiltration": 54,
+    "destination_exfiltration": 8,
+    "taint_propagation_exfiltration": 1
+   },
+   "sessions_with_a_taint_alert": 9,
+   "taint_alerts_per_1000_calls": 39.11,
+   "sampled": false,
+   "timing": {
+    "texts": 1332,
+    "computed_now": 1,
+    "busy_s": 8.426815200131387
+   }
+  }
+ }
+}

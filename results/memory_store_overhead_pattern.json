@@ -1,0 +1,6 @@
+{
+ "ops": 1000,
+ "direct_ms_median": 5.101,
+ "wrapped_ms_median": 5.065,
+ "wrapper_alone_us": 18.74
+}

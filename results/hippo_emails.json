@@ -1,0 +1,71 @@
+{
+ "emails": 135,
+ "in_the_main_results": 21,
+ "others": 114,
+ "addresses": {
+  "distinct": 3,
+  "emails_naming_one": 135
+ },
+ "detectors": {
+  "pattern": {
+   "main_results": {
+    "flagged": 3,
+    "of": 21,
+    "rate": 0.1429,
+    "ci95": [
+     0.0498,
+     0.3464
+    ]
+   },
+   "others": {
+    "flagged": 8,
+    "of": 114,
+    "rate": 0.0702,
+    "ci95": [
+     0.036,
+     0.1324
+    ]
+   }
+  },
+  "classifier": {
+   "main_results": {
+    "flagged": 17,
+    "of": 21,
+    "rate": 0.8095,
+    "ci95": [
+     0.6,
+     0.9233
+    ]
+   },
+   "others": {
+    "flagged": 99,
+    "of": 114,
+    "rate": 0.8684,
+    "ci95": [
+     0.7942,
+     0.9186
+    ]
+   }
+  },
+  "cascade": {
+   "main_results": {
+    "flagged": 21,
+    "of": 21,
+    "rate": 1.0,
+    "ci95": [
+     0.8454,
+     1.0
+    ]
+   },
+   "others": {
+    "flagged": 107,
+    "of": 114,
+    "rate": 0.9386,
+    "ci95": [
+     0.8787,
+     0.9699
+    ]
+   }
+  }
+ }
+}

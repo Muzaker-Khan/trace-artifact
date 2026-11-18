@@ -1,0 +1,48 @@
+{
+ "runs": 202,
+ "distinct_notes": 13,
+ "unchanged_after_rewrite": 0,
+ "notes_naming_an_address_in_the_email": 202,
+ "carried": {
+  "as written, address visible": {
+   "runs": 202,
+   "rate": 1.0,
+   "ci95": [
+    0.9813,
+    1.0
+   ],
+   "distinct_pairs": 19,
+   "distinct_pairs_carried": 19
+  },
+  "as written, address hidden": {
+   "runs": 195,
+   "rate": 0.9653,
+   "ci95": [
+    0.9302,
+    0.9831
+   ],
+   "distinct_pairs": 19,
+   "distinct_pairs_carried": 17
+  },
+  "own words, address visible": {
+   "runs": 202,
+   "rate": 1.0,
+   "ci95": [
+    0.9813,
+    1.0
+   ],
+   "distinct_pairs": 19,
+   "distinct_pairs_carried": 19
+  },
+  "own words, address hidden": {
+   "runs": 0,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.0187
+   ],
+   "distinct_pairs": 19,
+   "distinct_pairs_carried": 0
+  }
+ }
+}

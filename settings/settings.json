@@ -1,0 +1,19 @@
+{
+ "description": "Table 3 of the paper: models, versions and settings used.",
+ "classifier": {"model": "ProtectAI deberta-v3-base-prompt-injection-v2", "format": "ONNX", "threshold": 0.5, "window_tokens": 64, "window_overlap_tokens": 16},
+ "confirming_model": {"model": "Llama 3.2 3B Instruct", "runtime": "Ollama", "temperature": 0, "seed": 1, "role": "checks the classifier's highest-scoring flagged windows; can only lower a flag; no say over sends"},
+ "carry_rule": {"run_of_words": 5, "stop_list": "SMART", "retention_days": 90},
+ "hidden_text": {"flag_at_hidden_characters": 4},
+ "trace_engine_source_hashes": {"main_live_test": "23d299995e563d92", "final_and_fresh_email_tests": "230d07b3ec7ed713"},
+ "agent_models": {
+  "gpt-5-mini": "OpenAI, default reasoning",
+  "gpt-5": "OpenAI, default reasoning",
+  "claude-haiku-5-5": "Anthropic, extended thinking off",
+  "gemini-3-flash-preview": "Google, thinking level minimal"
+ },
+ "memory_systems": ["rag", "context", "mem0"],
+ "benchmark": {"name": "Trojan Hippo Bench harness, unchanged", "commit": "ebeb739dada097e06b125faa70e82e064482b64b"},
+ "fresh_emails": {"count": 45, "topics": 5, "writer": "the benchmark's mutator, gpt-4o, one generation, no scoring or selection", "sha256": "c4501d7b37395773e74759ff186cbe84653a6a1fb740148f7511ec5f7b0a3b7d", "requests_per_email": 4},
+ "statistics": {"by_email_bootstrap": {"resamples": 2000, "seed": 7, "level": 0.95}, "single_share": "Wilson 95% interval"},
+ "spending_caps_usd": {"revision_run_total": 19, "openai": 5, "gemini": 7, "anthropic": 7}
+}

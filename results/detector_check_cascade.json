@@ -1,0 +1,269 @@
+{
+ "detector": "cascade",
+ "sets": {
+  "honest tool outputs": {
+   "texts": 386,
+   "flagged": 5,
+   "ci95": [
+    0.0055,
+    0.03
+   ],
+   "low": 67,
+   "rule": 0,
+   "route": 0,
+   "classifier": 5
+  },
+  "honest emails": {
+   "texts": 18,
+   "flagged": 0,
+   "ci95": [
+    0.0,
+    0.1759
+   ],
+   "low": 1,
+   "rule": 0,
+   "route": 0,
+   "classifier": 0
+  },
+  "deepset honest": {
+   "texts": 399,
+   "flagged": 1,
+   "ci95": [
+    0.0004,
+    0.0141
+   ],
+   "low": 3,
+   "rule": 0,
+   "route": 0,
+   "classifier": 1
+  },
+  "memory corpus honest": {
+   "texts": 15,
+   "flagged": 0,
+   "ci95": [
+    0.0,
+    0.2039
+   ],
+   "low": 0,
+   "rule": 0,
+   "route": 0,
+   "classifier": 0
+  },
+  "prompted, original": {
+   "texts": 5,
+   "flagged": 5,
+   "ci95": [
+    0.5655,
+    1.0
+   ],
+   "low": 0,
+   "rule": 4,
+   "route": 0,
+   "classifier": 1
+  },
+  "develop, original": {
+   "texts": 71,
+   "flagged": 69,
+   "ci95": [
+    0.903,
+    0.9922
+   ],
+   "low": 1,
+   "rule": 7,
+   "route": 16,
+   "classifier": 46
+  },
+  "prompted, hidden": {
+   "texts": 5,
+   "flagged": 5,
+   "ci95": [
+    0.5655,
+    1.0
+   ],
+   "low": 0,
+   "rule": 4,
+   "route": 0,
+   "classifier": 1
+  },
+  "develop, hidden": {
+   "texts": 71,
+   "flagged": 69,
+   "ci95": [
+    0.903,
+    0.9922
+   ],
+   "low": 1,
+   "rule": 9,
+   "route": 14,
+   "classifier": 46
+  },
+  "prompted, hidden-harder": {
+   "texts": 5,
+   "flagged": 3,
+   "ci95": [
+    0.2307,
+    0.8824
+   ],
+   "low": 0,
+   "rule": 0,
+   "route": 0,
+   "classifier": 3
+  },
+  "develop, hidden-harder": {
+   "texts": 71,
+   "flagged": 45,
+   "ci95": [
+    0.5176,
+    0.7363
+   ],
+   "low": 12,
+   "rule": 0,
+   "route": 0,
+   "classifier": 45
+  },
+  "prompted, judge": {
+   "texts": 5,
+   "flagged": 5,
+   "ci95": [
+    0.5655,
+    1.0
+   ],
+   "low": 0,
+   "rule": 4,
+   "route": 1,
+   "classifier": 0
+  },
+  "develop, judge": {
+   "texts": 71,
+   "flagged": 63,
+   "ci95": [
+    0.7931,
+    0.9418
+   ],
+   "low": 8,
+   "rule": 7,
+   "route": 25,
+   "classifier": 31
+  },
+  "prompted, fragmented": {
+   "texts": 5,
+   "flagged": 5,
+   "ci95": [
+    0.5655,
+    1.0
+   ],
+   "low": 0,
+   "rule": 4,
+   "route": 0,
+   "classifier": 1
+  },
+  "develop, fragmented": {
+   "texts": 71,
+   "flagged": 67,
+   "ci95": [
+    0.8639,
+    0.9779
+   ],
+   "low": 1,
+   "rule": 4,
+   "route": 12,
+   "classifier": 51
+  },
+  "prompted, spread": {
+   "texts": 5,
+   "flagged": 5,
+   "ci95": [
+    0.5655,
+    1.0
+   ],
+   "low": 0,
+   "rule": 4,
+   "route": 0,
+   "classifier": 1
+  },
+  "develop, spread": {
+   "texts": 71,
+   "flagged": 49,
+   "ci95": [
+    0.5752,
+    0.7856
+   ],
+   "low": 8,
+   "rule": 6,
+   "route": 30,
+   "classifier": 13
+  },
+  "prompted, hidden-judge": {
+   "texts": 5,
+   "flagged": 5,
+   "ci95": [
+    0.5655,
+    1.0
+   ],
+   "low": 0,
+   "rule": 4,
+   "route": 1,
+   "classifier": 0
+  },
+  "develop, hidden-judge": {
+   "texts": 71,
+   "flagged": 57,
+   "ci95": [
+    0.6958,
+    0.8787
+   ],
+   "low": 14,
+   "rule": 9,
+   "route": 18,
+   "classifier": 30
+  },
+  "prompted, invisible": {
+   "texts": 5,
+   "flagged": 5,
+   "ci95": [
+    0.5655,
+    1.0
+   ],
+   "low": 0,
+   "rule": 5,
+   "route": 0,
+   "classifier": 0
+  },
+  "develop, invisible": {
+   "texts": 71,
+   "flagged": 71,
+   "ci95": [
+    0.9487,
+    1.0
+   ],
+   "low": 0,
+   "rule": 71,
+   "route": 0,
+   "classifier": 0
+  },
+  "prompted, zero-width": {
+   "texts": 5,
+   "flagged": 5,
+   "ci95": [
+    0.5655,
+    1.0
+   ],
+   "low": 0,
+   "rule": 4,
+   "route": 0,
+   "classifier": 1
+  },
+  "develop, zero-width": {
+   "texts": 71,
+   "flagged": 69,
+   "ci95": [
+    0.903,
+    0.9922
+   ],
+   "low": 1,
+   "rule": 7,
+   "route": 16,
+   "classifier": 46
+  }
+ }
+}

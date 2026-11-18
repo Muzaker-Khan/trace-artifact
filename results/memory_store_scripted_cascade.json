@@ -1,0 +1,72 @@
+{
+ "server": {
+  "name": "memory-server",
+  "version": "2.0.1"
+ },
+ "version": "2.0.1",
+ "tools": [
+  "add_observations",
+  "create_entities",
+  "create_relations",
+  "delete_entities",
+  "delete_observations",
+  "delete_relations",
+  "open_nodes",
+  "read_graph",
+  "search_nodes"
+ ],
+ "detector": "cascade",
+ "groups": {
+  "0": {
+   "trials": 30,
+   "alerted": 30,
+   "by_destination": 30,
+   "recall": 1.0,
+   "recall_ci95": [
+    0.8865,
+    1.0
+   ],
+   "linked_to_plant": 30,
+   "controls": 30,
+   "control_alerts": 0,
+   "control_alert_ci95": [
+    0.0,
+    0.1135
+   ]
+  },
+  "10": {
+   "trials": 15,
+   "alerted": 15,
+   "by_destination": 15,
+   "recall": 1.0,
+   "recall_ci95": [
+    0.7961,
+    1.0
+   ],
+   "linked_to_plant": 15,
+   "controls": 15,
+   "control_alerts": 0,
+   "control_alert_ci95": [
+    0.0,
+    0.2039
+   ]
+  },
+  "100": {
+   "trials": 10,
+   "alerted": 10,
+   "by_destination": 10,
+   "recall": 1.0,
+   "recall_ci95": [
+    0.7225,
+    1.0
+   ],
+   "linked_to_plant": 10,
+   "controls": 10,
+   "control_alerts": 0,
+   "control_alert_ci95": [
+    0.0,
+    0.2775
+   ]
+  }
+ }
+}

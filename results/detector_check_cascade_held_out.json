@@ -1,0 +1,101 @@
+{
+ "detector": "cascade",
+ "sets": {
+  "held-out, original": {
+   "texts": 59,
+   "flagged": 56,
+   "ci95": [
+    0.8608,
+    0.9826
+   ],
+   "low": 3,
+   "rule": 3,
+   "route": 9,
+   "classifier": 44
+  },
+  "held-out, hidden": {
+   "texts": 59,
+   "flagged": 56,
+   "ci95": [
+    0.8608,
+    0.9826
+   ],
+   "low": 3,
+   "rule": 4,
+   "route": 7,
+   "classifier": 45
+  },
+  "held-out, hidden-harder": {
+   "texts": 59,
+   "flagged": 48,
+   "ci95": [
+    0.6962,
+    0.8926
+   ],
+   "low": 6,
+   "rule": 0,
+   "route": 0,
+   "classifier": 48
+  },
+  "held-out, judge": {
+   "texts": 59,
+   "flagged": 51,
+   "ci95": [
+    0.7546,
+    0.9297
+   ],
+   "low": 8,
+   "rule": 3,
+   "route": 17,
+   "classifier": 31
+  },
+  "held-out, fragmented": {
+   "texts": 59,
+   "flagged": 55,
+   "ci95": [
+    0.8382,
+    0.9733
+   ],
+   "low": 1,
+   "rule": 3,
+   "route": 6,
+   "classifier": 46
+  },
+  "held-out, spread": {
+   "texts": 59,
+   "flagged": 29,
+   "ci95": [
+    0.3684,
+    0.6157
+   ],
+   "low": 17,
+   "rule": 3,
+   "route": 9,
+   "classifier": 17
+  },
+  "held-out, hidden-judge": {
+   "texts": 59,
+   "flagged": 47,
+   "ci95": [
+    0.6773,
+    0.8796
+   ],
+   "low": 12,
+   "rule": 4,
+   "route": 16,
+   "classifier": 27
+  },
+  "honest emails": {
+   "texts": 18,
+   "flagged": 0,
+   "ci95": [
+    0.0,
+    0.1759
+   ],
+   "low": 1,
+   "rule": 0,
+   "route": 0,
+   "classifier": 0
+  }
+ }
+}

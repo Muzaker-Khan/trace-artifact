@@ -1,0 +1,25 @@
+{
+ "model": "llama3.2:3b",
+ "outputs": 25,
+ "runs": 200,
+ "unpinned": {
+  "verdicts_changed": 4,
+  "share_changed": 0.16,
+  "flagged_first_pass": 4,
+  "flagged_second_pass": 4,
+  "alerts_first_pass": 9,
+  "alerts_second_pass": 49,
+  "alerts_in_only_one_pass": 50
+ },
+ "pinned": {
+  "verdicts_changed": 0,
+  "flagged": 4
+ },
+ "seconds_per_output": 2.77,
+ "model_calls": 50,
+ "unusable_answers": 0,
+ "with_verdict_log": {
+  "alerts_replay": 9,
+  "alerts_in_only_one_pass": 0
+ }
+}

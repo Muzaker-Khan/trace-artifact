@@ -1,0 +1,97 @@
+{
+ "source": "MEM-INV-Bench recorded runs, arXiv:2606.24322",
+ "notes": 62,
+ "models": 9,
+ "scenarios": 8,
+ "by_run_length": {
+  "3": {
+   "carried": 58,
+   "rate": 0.9355,
+   "ci95_by_scenario": [
+    0.7966,
+    1.0
+   ],
+   "carried_by_words": 54,
+   "rate_by_words": 0.871
+  },
+  "4": {
+   "carried": 57,
+   "rate": 0.9194,
+   "ci95_by_scenario": [
+    0.7458,
+    1.0
+   ],
+   "carried_by_words": 50,
+   "rate_by_words": 0.8065
+  },
+  "5": {
+   "carried": 56,
+   "rate": 0.9032,
+   "ci95_by_scenario": [
+    0.6949,
+    1.0
+   ],
+   "carried_by_words": 40,
+   "rate_by_words": 0.6452
+  },
+  "6": {
+   "carried": 55,
+   "rate": 0.8871,
+   "ci95_by_scenario": [
+    0.6441,
+    1.0
+   ],
+   "carried_by_words": 32,
+   "rate_by_words": 0.5161
+  },
+  "8": {
+   "carried": 55,
+   "rate": 0.8871,
+   "ci95_by_scenario": [
+    0.6441,
+    1.0
+   ],
+   "carried_by_words": 22,
+   "rate_by_words": 0.3548
+  }
+ },
+ "keep_a_value": 42,
+ "per_model_run_3": {
+  "anthropic/claude-opus-5": [
+   5,
+   5
+  ],
+  "deepseek/deepseek-v4-pro": [
+   7,
+   8
+  ],
+  "google/gemini-3.8-flash": [
+   7,
+   8
+  ],
+  "meta-llama/llama-4-maverick": [
+   7,
+   8
+  ],
+  "moonshotai/kimi-k3": [
+   7,
+   7
+  ],
+  "openai/gpt-4o-mini": [
+   2,
+   2
+  ],
+  "openai/gpt-5.6-terra": [
+   7,
+   8
+  ],
+  "qwen/qwen3.8-max": [
+   8,
+   8
+  ],
+  "x-ai/grok-4.6": [
+   8,
+   8
+  ]
+ }
+}

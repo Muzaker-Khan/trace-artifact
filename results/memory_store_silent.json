@@ -1,0 +1,138 @@
+{
+ "server": "2.0.1",
+ "emails": 135,
+ "harmless": 24,
+ "gap_days": 7.0,
+ "detectors": {
+  "classifier": {
+   "attack, address visible": {
+    "plain": 115,
+    "reported": 127,
+    "reported_by_taint": 127,
+    "reported_by_destination": 127,
+    "carried": 127,
+    "carried_by_taint": 127,
+    "trials": 135,
+    "plain_ci95": [
+     0.7822,
+     0.902
+    ],
+    "reported_ci95": [
+     0.8874,
+     0.9697
+    ],
+    "carried_ci95": [
+     0.8874,
+     0.9697
+    ]
+   },
+   "attack, address hidden": {
+    "plain": 0,
+    "reported": 122,
+    "reported_by_taint": 122,
+    "reported_by_destination": 0,
+    "carried": 122,
+    "carried_by_taint": 122,
+    "trials": 135,
+    "plain_ci95": [
+     0.0,
+     0.0277
+    ],
+    "reported_ci95": [
+     0.8422,
+     0.9429
+    ],
+    "carried_ci95": [
+     0.8422,
+     0.9429
+    ]
+   },
+   "harmless": {
+    "plain": 0,
+    "reported": 1,
+    "reported_by_taint": 1,
+    "reported_by_destination": 0,
+    "carried": 1,
+    "carried_by_taint": 1,
+    "trials": 24,
+    "plain_ci95": [
+     0.0,
+     0.138
+    ],
+    "reported_ci95": [
+     0.0074,
+     0.2024
+    ],
+    "carried_ci95": [
+     0.0074,
+     0.2024
+    ]
+   }
+  },
+  "cascade": {
+   "attack, address visible": {
+    "plain": 130,
+    "reported": 133,
+    "reported_by_taint": 133,
+    "reported_by_destination": 133,
+    "carried": 133,
+    "carried_by_taint": 133,
+    "trials": 135,
+    "plain_ci95": [
+     0.9162,
+     0.9841
+    ],
+    "reported_ci95": [
+     0.9476,
+     0.9959
+    ],
+    "carried_ci95": [
+     0.9476,
+     0.9959
+    ]
+   },
+   "attack, address hidden": {
+    "plain": 0,
+    "reported": 107,
+    "reported_by_taint": 107,
+    "reported_by_destination": 0,
+    "carried": 107,
+    "carried_by_taint": 107,
+    "trials": 135,
+    "plain_ci95": [
+     0.0,
+     0.0277
+    ],
+    "reported_ci95": [
+     0.7166,
+     0.8524
+    ],
+    "carried_ci95": [
+     0.7166,
+     0.8524
+    ]
+   },
+   "harmless": {
+    "plain": 0,
+    "reported": 0,
+    "reported_by_taint": 0,
+    "reported_by_destination": 0,
+    "carried": 0,
+    "carried_by_taint": 0,
+    "trials": 24,
+    "plain_ci95": [
+     0.0,
+     0.138
+    ],
+    "reported_ci95": [
+     0.0,
+     0.138
+    ],
+    "carried_ci95": [
+     0.0,
+     0.138
+    ]
+   }
+  }
+ }
+}

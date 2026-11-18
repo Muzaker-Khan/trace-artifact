@@ -1,0 +1,236 @@
+{
+ "events": 30000,
+ "workers": 4,
+ "downtime_s": 2.0,
+ "reference_alerts": 461,
+ "modes": {
+  "always": {
+   "clean": [
+    {
+     "elapsed_s": 3.138,
+     "alerts": 461,
+     "identical": true,
+     "missing": 0,
+     "extra": 0,
+     "recall": 1.0,
+     "broker_restarts_seen": 0,
+     "duplicates_dropped": 0,
+     "outage_s": null
+    },
+    {
+     "elapsed_s": 3.137,
+     "alerts": 461,
+     "identical": true,
+     "missing": 0,
+     "extra": 0,
+     "recall": 1.0,
+     "broker_restarts_seen": 0,
+     "duplicates_dropped": 0,
+     "outage_s": null
+    },
+    {
+     "elapsed_s": 3.976,
+     "alerts": 461,
+     "identical": true,
+     "missing": 0,
+     "extra": 0,
+     "recall": 1.0,
+     "broker_restarts_seen": 0,
+     "duplicates_dropped": 0,
+     "outage_s": null
+    }
+   ],
+   "crashed": [
+    {
+     "elapsed_s": 9.606,
+     "alerts": 461,
+     "identical": true,
+     "missing": 0,
+     "extra": 0,
+     "recall": 1.0,
+     "broker_restarts_seen": 4,
+     "duplicates_dropped": 175,
+     "outage_s": 2.68
+    },
+    {
+     "elapsed_s": 7.53,
+     "alerts": 461,
+     "identical": true,
+     "missing": 0,
+     "extra": 0,
+     "recall": 1.0,
+     "broker_restarts_seen": 4,
+     "duplicates_dropped": 147,
+     "outage_s": 2.74
+    },
+    {
+     "elapsed_s": 8.072,
+     "alerts": 461,
+     "identical": true,
+     "missing": 0,
+     "extra": 0,
+     "recall": 1.0,
+     "broker_restarts_seen": 4,
+     "duplicates_dropped": 125,
+     "outage_s": 2.85
+    }
+   ],
+   "clean_mean_s": 3.417,
+   "crashed_mean_s": 8.403,
+   "crashed_recall_mean": 1.0,
+   "crashed_identical": 3
+  },
+  "everysec": {
+   "clean": [
+    {
+     "elapsed_s": 3.17,
+     "alerts": 461,
+     "identical": true,
+     "missing": 0,
+     "extra": 0,
+     "recall": 1.0,
+     "broker_restarts_seen": 0,
+     "duplicates_dropped": 0,
+     "outage_s": null
+    },
+    {
+     "elapsed_s": 3.731,
+     "alerts": 461,
+     "identical": true,
+     "missing": 0,
+     "extra": 0,
+     "recall": 1.0,
+     "broker_restarts_seen": 0,
+     "duplicates_dropped": 0,
+     "outage_s": null
+    },
+    {
+     "elapsed_s": 3.165,
+     "alerts": 461,
+     "identical": true,
+     "missing": 0,
+     "extra": 0,
+     "recall": 1.0,
+     "broker_restarts_seen": 0,
+     "duplicates_dropped": 0,
+     "outage_s": null
+    }
+   ],
+   "crashed": [
+    {
+     "elapsed_s": 8.059,
+     "alerts": 461,
+     "identical": true,
+     "missing": 0,
+     "extra": 0,
+     "recall": 1.0,
+     "broker_restarts_seen": 4,
+     "duplicates_dropped": 143,
+     "outage_s": 2.98
+    },
+    {
+     "elapsed_s": 7.256,
+     "alerts": 461,
+     "identical": true,
+     "missing": 0,
+     "extra": 0,
+     "recall": 1.0,
+     "broker_restarts_seen": 4,
+     "duplicates_dropped": 162,
+     "outage_s": 2.81
+    },
+    {
+     "elapsed_s": 7.262,
+     "alerts": 461,
+     "identical": true,
+     "missing": 0,
+     "extra": 0,
+     "recall": 1.0,
+     "broker_restarts_seen": 4,
+     "duplicates_dropped": 167,
+     "outage_s": 2.82
+    }
+   ],
+   "clean_mean_s": 3.355,
+   "crashed_mean_s": 7.526,
+   "crashed_recall_mean": 1.0,
+   "crashed_identical": 3
+  },
+  "off": {
+   "clean": [
+    {
+     "elapsed_s": 3.046,
+     "alerts": 461,
+     "identical": true,
+     "missing": 0,
+     "extra": 0,
+     "recall": 1.0,
+     "broker_restarts_seen": 0,
+     "duplicates_dropped": 0,
+     "outage_s": null
+    },
+    {
+     "elapsed_s": 2.72,
+     "alerts": 461,
+     "identical": true,
+     "missing": 0,
+     "extra": 0,
+     "recall": 1.0,
+     "broker_restarts_seen": 0,
+     "duplicates_dropped": 0,
+     "outage_s": null
+    },
+    {
+     "elapsed_s": 2.924,
+     "alerts": 461,
+     "identical": true,
+     "missing": 0,
+     "extra": 0,
+     "recall": 1.0,
+     "broker_restarts_seen": 0,
+     "duplicates_dropped": 0,
+     "outage_s": null
+    }
+   ],
+   "crashed": [
+    {
+     "elapsed_s": 4.659,
+     "alerts": 98,
+     "identical": false,
+     "missing": 363,
+     "extra": 0,
+     "recall": 0.2126,
+     "broker_restarts_seen": 2,
+     "duplicates_dropped": 0,
+     "outage_s": 2.92
+    },
+    {
+     "elapsed_s": 4.329,
+     "alerts": 119,
+     "identical": false,
+     "missing": 342,
+     "extra": 0,
+     "recall": 0.2581,
+     "broker_restarts_seen": 4,
+     "duplicates_dropped": 0,
+     "outage_s": 2.79
+    },
+    {
+     "elapsed_s": 4.541,
+     "alerts": 114,
+     "identical": false,
+     "missing": 347,
+     "extra": 0,
+     "recall": 0.2473,
+     "broker_restarts_seen": 3,
+     "duplicates_dropped": 0,
+     "outage_s": 2.86
+    }
+   ],
+   "clean_mean_s": 2.897,
+   "crashed_mean_s": 4.51,
+   "crashed_recall_mean": 0.2393,
+   "crashed_identical": 0
+  }
+ }
+}

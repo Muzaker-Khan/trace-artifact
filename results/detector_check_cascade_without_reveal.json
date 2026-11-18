@@ -1,0 +1,53 @@
+{
+ "detector": "cascade",
+ "sets": {
+  "prompted, invisible": {
+   "texts": 5,
+   "flagged": 0,
+   "ci95": [
+    0.0,
+    0.4345
+   ],
+   "low": 0,
+   "rule": 0,
+   "route": 0,
+   "classifier": 0
+  },
+  "develop, invisible": {
+   "texts": 71,
+   "flagged": 0,
+   "ci95": [
+    0.0,
+    0.0513
+   ],
+   "low": 4,
+   "rule": 0,
+   "route": 0,
+   "classifier": 0
+  },
+  "prompted, zero-width": {
+   "texts": 5,
+   "flagged": 4,
+   "ci95": [
+    0.3755,
+    0.9638
+   ],
+   "low": 1,
+   "rule": 0,
+   "route": 0,
+   "classifier": 4
+  },
+  "develop, zero-width": {
+   "texts": 71,
+   "flagged": 58,
+   "ci95": [
+    0.7115,
+    0.8898
+   ],
+   "low": 13,
+   "rule": 0,
+   "route": 0,
+   "classifier": 58
+  }
+ }
+}

@@ -1,0 +1,617 @@
+{
+ "source": "AgentDojo v1.2.2 ground-truth traces, attack important_instructions",
+ "traces": 1046,
+ "distinct_outputs": 1115,
+ "detectors": {
+  "pattern": {
+   "workspace": {
+    "attacks": 560,
+    "flagged_content": 0,
+    "caught_before": 0,
+    "caught_at_all": 0,
+    "sink_rule": 0,
+    "destination_rule": 0,
+    "divergence": 0,
+    "benign": 40,
+    "benign_alerted": 0,
+    "benign_chain_alerts": 0,
+    "benign_divergence": 0,
+    "flagged_content_rate": 0.0,
+    "flagged_content_ci95": [
+     0.0,
+     0.0068
+    ],
+    "caught_before_rate": 0.0,
+    "caught_rate": 0.0,
+    "divergence_rate": 0.0,
+    "benign_false_alarm_rate": 0.0,
+    "benign_false_alarm_ci95": [
+     0.0,
+     0.0876
+    ],
+    "benign_chain_alert_rate": 0.0,
+    "benign_divergence_rate": 0.0
+   },
+   "travel": {
+    "attacks": 140,
+    "flagged_content": 0,
+    "caught_before": 0,
+    "caught_at_all": 0,
+    "sink_rule": 0,
+    "destination_rule": 0,
+    "divergence": 0,
+    "benign": 20,
+    "benign_alerted": 0,
+    "benign_chain_alerts": 0,
+    "benign_divergence": 0,
+    "flagged_content_rate": 0.0,
+    "flagged_content_ci95": [
+     0.0,
+     0.0267
+    ],
+    "caught_before_rate": 0.0,
+    "caught_rate": 0.0,
+    "divergence_rate": 0.0,
+    "benign_false_alarm_rate": 0.0,
+    "benign_false_alarm_ci95": [
+     0.0,
+     0.1611
+    ],
+    "benign_chain_alert_rate": 0.0,
+    "benign_divergence_rate": 0.0
+   },
+   "banking": {
+    "attacks": 144,
+    "flagged_content": 0,
+    "caught_before": 0,
+    "caught_at_all": 0,
+    "sink_rule": 0,
+    "destination_rule": 0,
+    "divergence": 0,
+    "benign": 16,
+    "benign_alerted": 0,
+    "benign_chain_alerts": 0,
+    "benign_divergence": 0,
+    "flagged_content_rate": 0.0,
+    "flagged_content_ci95": [
+     0.0,
+     0.026
+    ],
+    "caught_before_rate": 0.0,
+    "caught_rate": 0.0,
+    "divergence_rate": 0.0,
+    "benign_false_alarm_rate": 0.0,
+    "benign_false_alarm_ci95": [
+     0.0,
+     0.1936
+    ],
+    "benign_chain_alert_rate": 0.0,
+    "benign_divergence_rate": 0.0
+   },
+   "slack": {
+    "attacks": 105,
+    "flagged_content": 0,
+    "caught_before": 0,
+    "caught_at_all": 0,
+    "sink_rule": 0,
+    "destination_rule": 0,
+    "divergence": 0,
+    "benign": 21,
+    "benign_alerted": 0,
+    "benign_chain_alerts": 0,
+    "benign_divergence": 0,
+    "flagged_content_rate": 0.0,
+    "flagged_content_ci95": [
+     0.0,
+     0.0353
+    ],
+    "caught_before_rate": 0.0,
+    "caught_rate": 0.0,
+    "divergence_rate": 0.0,
+    "benign_false_alarm_rate": 0.0,
+    "benign_false_alarm_ci95": [
+     0.0,
+     0.1546
+    ],
+    "benign_chain_alert_rate": 0.0,
+    "benign_divergence_rate": 0.0
+   },
+   "all": {
+    "attacks": 949,
+    "flagged_content": 0,
+    "caught_before": 0,
+    "caught_at_all": 0,
+    "sink_rule": 0,
+    "destination_rule": 0,
+    "divergence": 0,
+    "benign": 97,
+    "benign_alerted": 0,
+    "benign_chain_alerts": 0,
+    "benign_divergence": 0,
+    "flagged_content_rate": 0.0,
+    "flagged_content_ci95": [
+     0.0,
+     0.004
+    ],
+    "caught_before_rate": 0.0,
+    "caught_rate": 0.0,
+    "divergence_rate": 0.0,
+    "benign_false_alarm_rate": 0.0,
+    "benign_false_alarm_ci95": [
+     0.0,
+     0.0381
+    ],
+    "benign_chain_alert_rate": 0.0,
+    "benign_divergence_rate": 0.0
+   },
+   "timing": {
+    "texts": 1115,
+    "computed_now": 0,
+    "busy_s": 0.0
+   },
+   "sampled_attacks": null
+  },
+  "classifier": {
+   "workspace": {
+    "attacks": 560,
+    "flagged_content": 520,
+    "caught_before": 520,
+    "caught_at_all": 520,
+    "sink_rule": 198,
+    "destination_rule": 198,
+    "divergence": 0,
+    "benign": 40,
+    "benign_alerted": 15,
+    "benign_chain_alerts": 2,
+    "benign_divergence": 0,
+    "flagged_content_rate": 0.9286,
+    "flagged_content_ci95": [
+     0.9042,
+     0.9471
+    ],
+    "caught_before_rate": 0.9286,
+    "caught_rate": 0.9286,
+    "divergence_rate": 0.0,
+    "benign_false_alarm_rate": 0.375,
+    "benign_false_alarm_ci95": [
+     0.2422,
+     0.5297
+    ],
+    "benign_chain_alert_rate": 0.05,
+    "benign_divergence_rate": 0.0
+   },
+   "travel": {
+    "attacks": 140,
+    "flagged_content": 140,
+    "caught_before": 140,
+    "caught_at_all": 140,
+    "sink_rule": 64,
+    "destination_rule": 60,
+    "divergence": 0,
+    "benign": 20,
+    "benign_alerted": 12,
+    "benign_chain_alerts": 1,
+    "benign_divergence": 0,
+    "flagged_content_rate": 1.0,
+    "flagged_content_ci95": [
+     0.9733,
+     1.0
+    ],
+    "caught_before_rate": 1.0,
+    "caught_rate": 1.0,
+    "divergence_rate": 0.0,
+    "benign_false_alarm_rate": 0.6,
+    "benign_false_alarm_ci95": [
+     0.3866,
+     0.7812
+    ],
+    "benign_chain_alert_rate": 0.05,
+    "benign_divergence_rate": 0.0
+   },
+   "banking": {
+    "attacks": 144,
+    "flagged_content": 144,
+    "caught_before": 144,
+    "caught_at_all": 144,
+    "sink_rule": 124,
+    "destination_rule": 118,
+    "divergence": 0,
+    "benign": 16,
+    "benign_alerted": 6,
+    "benign_chain_alerts": 1,
+    "benign_divergence": 0,
+    "flagged_content_rate": 1.0,
+    "flagged_content_ci95": [
+     0.974,
+     1.0
+    ],
+    "caught_before_rate": 1.0,
+    "caught_rate": 1.0,
+    "divergence_rate": 0.0,
+    "benign_false_alarm_rate": 0.375,
+    "benign_false_alarm_ci95": [
+     0.1848,
+     0.6136
+    ],
+    "benign_chain_alert_rate": 0.0625,
+    "benign_divergence_rate": 0.0
+   },
+   "slack": {
+    "attacks": 105,
+    "flagged_content": 105,
+    "caught_before": 103,
+    "caught_at_all": 105,
+    "sink_rule": 91,
+    "destination_rule": 0,
+    "divergence": 0,
+    "benign": 21,
+    "benign_alerted": 7,
+    "benign_chain_alerts": 7,
+    "benign_divergence": 0,
+    "flagged_content_rate": 1.0,
+    "flagged_content_ci95": [
+     0.9647,
+     1.0
+    ],
+    "caught_before_rate": 0.981,
+    "caught_rate": 1.0,
+    "divergence_rate": 0.0,
+    "benign_false_alarm_rate": 0.3333,
+    "benign_false_alarm_ci95": [
+     0.1719,
+     0.5463
+    ],
+    "benign_chain_alert_rate": 0.3333,
+    "benign_divergence_rate": 0.0
+   },
+   "all": {
+    "attacks": 949,
+    "flagged_content": 909,
+    "caught_before": 907,
+    "caught_at_all": 909,
+    "sink_rule": 477,
+    "destination_rule": 376,
+    "divergence": 0,
+    "benign": 97,
+    "benign_alerted": 40,
+    "benign_chain_alerts": 11,
+    "benign_divergence": 0,
+    "flagged_content_rate": 0.9579,
+    "flagged_content_ci95": [
+     0.9431,
+     0.9689
+    ],
+    "caught_before_rate": 0.9557,
+    "caught_rate": 0.9579,
+    "divergence_rate": 0.0,
+    "benign_false_alarm_rate": 0.4124,
+    "benign_false_alarm_ci95": [
+     0.3196,
+     0.5118
+    ],
+    "benign_chain_alert_rate": 0.1134,
+    "benign_divergence_rate": 0.0
+   },
+   "timing": {
+    "texts": 1115,
+    "computed_now": 0,
+    "busy_s": 0.0
+   },
+   "sampled_attacks": null
+  },
+  "cascade": {
+   "workspace": {
+    "attacks": 560,
+    "flagged_content": 504,
+    "caught_before": 534,
+    "caught_at_all": 534,
+    "sink_rule": 194,
+    "destination_rule": 194,
+    "divergence": 0,
+    "benign": 40,
+    "benign_alerted": 15,
+    "benign_chain_alerts": 10,
+    "benign_divergence": 0,
+    "flagged_content_rate": 0.9,
+    "flagged_content_ci95": [
+     0.8724,
+     0.9222
+    ],
+    "caught_before_rate": 0.9536,
+    "caught_rate": 0.9536,
+    "divergence_rate": 0.0,
+    "benign_false_alarm_rate": 0.375,
+    "benign_false_alarm_ci95": [
+     0.2422,
+     0.5297
+    ],
+    "benign_chain_alert_rate": 0.25,
+    "benign_divergence_rate": 0.0
+   },
+   "travel": {
+    "attacks": 140,
+    "flagged_content": 131,
+    "caught_before": 140,
+    "caught_at_all": 140,
+    "sink_rule": 62,
+    "destination_rule": 60,
+    "divergence": 0,
+    "benign": 20,
+    "benign_alerted": 12,
+    "benign_chain_alerts": 12,
+    "benign_divergence": 0,
+    "flagged_content_rate": 0.9357,
+    "flagged_content_ci95": [
+     0.8823,
+     0.9658
+    ],
+    "caught_before_rate": 1.0,
+    "caught_rate": 1.0,
+    "divergence_rate": 0.0,
+    "benign_false_alarm_rate": 0.6,
+    "benign_false_alarm_ci95": [
+     0.3866,
+     0.7812
+    ],
+    "benign_chain_alert_rate": 0.6,
+    "benign_divergence_rate": 0.0
+   },
+   "banking": {
+    "attacks": 144,
+    "flagged_content": 143,
+    "caught_before": 144,
+    "caught_at_all": 144,
+    "sink_rule": 123,
+    "destination_rule": 117,
+    "divergence": 0,
+    "benign": 16,
+    "benign_alerted": 6,
+    "benign_chain_alerts": 6,
+    "benign_divergence": 0,
+    "flagged_content_rate": 0.9931,
+    "flagged_content_ci95": [
+     0.9617,
+     0.9988
+    ],
+    "caught_before_rate": 1.0,
+    "caught_rate": 1.0,
+    "divergence_rate": 0.0,
+    "benign_false_alarm_rate": 0.375,
+    "benign_false_alarm_ci95": [
+     0.1848,
+     0.6136
+    ],
+    "benign_chain_alert_rate": 0.375,
+    "benign_divergence_rate": 0.0
+   },
+   "slack": {
+    "attacks": 105,
+    "flagged_content": 98,
+    "caught_before": 103,
+    "caught_at_all": 105,
+    "sink_rule": 83,
+    "destination_rule": 0,
+    "divergence": 0,
+    "benign": 21,
+    "benign_alerted": 7,
+    "benign_chain_alerts": 7,
+    "benign_divergence": 0,
+    "flagged_content_rate": 0.9333,
+    "flagged_content_ci95": [
+     0.8687,
+     0.9673
+    ],
+    "caught_before_rate": 0.981,
+    "caught_rate": 1.0,
+    "divergence_rate": 0.0,
+    "benign_false_alarm_rate": 0.3333,
+    "benign_false_alarm_ci95": [
+     0.1719,
+     0.5463
+    ],
+    "benign_chain_alert_rate": 0.3333,
+    "benign_divergence_rate": 0.0
+   },
+   "all": {
+    "attacks": 949,
+    "flagged_content": 876,
+    "caught_before": 921,
+    "caught_at_all": 923,
+    "sink_rule": 462,
+    "destination_rule": 371,
+    "divergence": 0,
+    "benign": 97,
+    "benign_alerted": 40,
+    "benign_chain_alerts": 35,
+    "benign_divergence": 0,
+    "flagged_content_rate": 0.9231,
+    "flagged_content_ci95": [
+     0.9044,
+     0.9384
+    ],
+    "caught_before_rate": 0.9705,
+    "caught_rate": 0.9726,
+    "divergence_rate": 0.0,
+    "benign_false_alarm_rate": 0.4124,
+    "benign_false_alarm_ci95": [
+     0.3196,
+     0.5118
+    ],
+    "benign_chain_alert_rate": 0.3608,
+    "benign_divergence_rate": 0.0
+   },
+   "timing": {
+    "texts": 1115,
+    "computed_now": 0,
+    "busy_s": 0.0
+   },
+   "sampled_attacks": null
+  },
+  "none": {
+   "workspace": {
+    "attacks": 560,
+    "flagged_content": 0,
+    "caught_before": 0,
+    "caught_at_all": 0,
+    "sink_rule": 0,
+    "destination_rule": 0,
+    "divergence": 0,
+    "benign": 40,
+    "benign_alerted": 0,
+    "benign_chain_alerts": 0,
+    "benign_divergence": 0,
+    "flagged_content_rate": 0.0,
+    "flagged_content_ci95": [
+     0.0,
+     0.0068
+    ],
+    "caught_before_rate": 0.0,
+    "caught_rate": 0.0,
+    "divergence_rate": 0.0,
+    "benign_false_alarm_rate": 0.0,
+    "benign_false_alarm_ci95": [
+     0.0,
+     0.0876
+    ],
+    "benign_chain_alert_rate": 0.0,
+    "benign_divergence_rate": 0.0
+   },
+   "travel": {
+    "attacks": 140,
+    "flagged_content": 0,
+    "caught_before": 0,
+    "caught_at_all": 0,
+    "sink_rule": 0,
+    "destination_rule": 0,
+    "divergence": 0,
+    "benign": 20,
+    "benign_alerted": 0,
+    "benign_chain_alerts": 0,
+    "benign_divergence": 0,
+    "flagged_content_rate": 0.0,
+    "flagged_content_ci95": [
+     0.0,
+     0.0267
+    ],
+    "caught_before_rate": 0.0,
+    "caught_rate": 0.0,
+    "divergence_rate": 0.0,
+    "benign_false_alarm_rate": 0.0,
+    "benign_false_alarm_ci95": [
+     0.0,
+     0.1611
+    ],
+    "benign_chain_alert_rate": 0.0,
+    "benign_divergence_rate": 0.0
+   },
+   "banking": {
+    "attacks": 144,
+    "flagged_content": 0,
+    "caught_before": 0,
+    "caught_at_all": 0,
+    "sink_rule": 0,
+    "destination_rule": 0,
+    "divergence": 0,
+    "benign": 16,
+    "benign_alerted": 0,
+    "benign_chain_alerts": 0,
+    "benign_divergence": 0,
+    "flagged_content_rate": 0.0,
+    "flagged_content_ci95": [
+     0.0,
+     0.026
+    ],
+    "caught_before_rate": 0.0,
+    "caught_rate": 0.0,
+    "divergence_rate": 0.0,
+    "benign_false_alarm_rate": 0.0,
+    "benign_false_alarm_ci95": [
+     0.0,
+     0.1936
+    ],
+    "benign_chain_alert_rate": 0.0,
+    "benign_divergence_rate": 0.0
+   },
+   "slack": {
+    "attacks": 105,
+    "flagged_content": 0,
+    "caught_before": 0,
+    "caught_at_all": 0,
+    "sink_rule": 0,
+    "destination_rule": 0,
+    "divergence": 0,
+    "benign": 21,
+    "benign_alerted": 0,
+    "benign_chain_alerts": 0,
+    "benign_divergence": 0,
+    "flagged_content_rate": 0.0,
+    "flagged_content_ci95": [
+     0.0,
+     0.0353
+    ],
+    "caught_before_rate": 0.0,
+    "caught_rate": 0.0,
+    "divergence_rate": 0.0,
+    "benign_false_alarm_rate": 0.0,
+    "benign_false_alarm_ci95": [
+     0.0,
+     0.1546
+    ],
+    "benign_chain_alert_rate": 0.0,
+    "benign_divergence_rate": 0.0
+   },
+   "all": {
+    "attacks": 949,
+    "flagged_content": 0,
+    "caught_before": 0,
+    "caught_at_all": 0,
+    "sink_rule": 0,
+    "destination_rule": 0,
+    "divergence": 0,
+    "benign": 97,
+    "benign_alerted": 0,
+    "benign_chain_alerts": 0,
+    "benign_divergence": 0,
+    "flagged_content_rate": 0.0,
+    "flagged_content_ci95": [
+     0.0,
+     0.004
+    ],
+    "caught_before_rate": 0.0,
+    "caught_rate": 0.0,
+    "divergence_rate": 0.0,
+    "benign_false_alarm_rate": 0.0,
+    "benign_false_alarm_ci95": [
+     0.0,
+     0.0381
+    ],
+    "benign_chain_alert_rate": 0.0,
+    "benign_divergence_rate": 0.0
+   },
+   "timing": {
+    "texts": 1115,
+    "computed_now": 0,
+    "busy_s": 0.0
+   },
+   "sampled_attacks": null
+  }
+ },
+ "divergence": {
+  "keyword": {
+   "attacks": 949,
+   "divergence": 714,
+   "divergence_rate": 0.7524,
+   "benign": 97,
+   "benign_divergence": 62,
+   "benign_divergence_rate": 0.6392
+  },
+  "llm": {
+   "attacks": 949,
+   "divergence": 429,
+   "divergence_rate": 0.4521,
+   "benign": 97,
+   "benign_divergence": 17,
+   "benign_divergence_rate": 0.1753
+  }
+ }
+}

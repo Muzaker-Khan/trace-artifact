@@ -1,0 +1,49 @@
+{
+ "timing": [
+  {
+   "record_bytes": 200,
+   "seal_us": 6.42,
+   "verify_us": 6.81,
+   "added_bytes_per_event": 84
+  },
+  {
+   "record_bytes": 1500,
+   "seal_us": 6.91,
+   "verify_us": 7.21,
+   "added_bytes_per_event": 84
+  },
+  {
+   "record_bytes": 8192,
+   "seal_us": 11.16,
+   "verify_us": 11.63,
+   "added_bytes_per_event": 84
+  }
+ ],
+ "detection": {
+  "edit": {
+   "trials": 5000,
+   "found_by_chain": 5000,
+   "found_with_anchor": 5000
+  },
+  "delete": {
+   "trials": 5000,
+   "found_by_chain": 5000,
+   "found_with_anchor": 5000
+  },
+  "swap": {
+   "trials": 5000,
+   "found_by_chain": 5000,
+   "found_with_anchor": 5000
+  },
+  "forged with stolen key": {
+   "trials": 5000,
+   "found_by_chain": 5000,
+   "found_with_anchor": 5000
+  },
+  "tail cut": {
+   "trials": 5000,
+   "found_by_chain": 0,
+   "found_with_anchor": 5000
+  }
+ }
+}

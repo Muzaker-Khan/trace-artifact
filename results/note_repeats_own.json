@@ -1,0 +1,50 @@
+{
+ "source": "our own coding-agent sessions, counts only",
+ "sessions_with_writes": 12,
+ "memory": {
+  "writes": 30,
+  "3": {
+   "repeat": 28,
+   "rate": 0.9333
+  },
+  "4": {
+   "repeat": 22,
+   "rate": 0.7333
+  },
+  "5": {
+   "repeat": 21,
+   "rate": 0.7
+  },
+  "6": {
+   "repeat": 18,
+   "rate": 0.6
+  },
+  "8": {
+   "repeat": 14,
+   "rate": 0.4667
+  }
+ },
+ "other": {
+  "writes": 466,
+  "3": {
+   "repeat": 424,
+   "rate": 0.9099
+  },
+  "4": {
+   "repeat": 371,
+   "rate": 0.7961
+  },
+  "5": {
+   "repeat": 317,
+   "rate": 0.6803
+  },
+  "6": {
+   "repeat": 282,
+   "rate": 0.6052
+  },
+  "8": {
+   "repeat": 230,
+   "rate": 0.4936
+  }
+ }
+}
